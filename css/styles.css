@@ -89,7 +89,7 @@ i {
   font-weight: bold;
   font-size: 24px;
   line-height: 133%;
-  color: #fff5e1;;
+  color: #fff5e1;
 }
 
 #presentation-info p {
@@ -113,7 +113,7 @@ i {
   font-family: 'Roboto', sans-serif;
 }
 
-.margin-tb-zero{
+.margin-tb-zero {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -122,4 +122,3 @@ i {
   align-items: center;
   justify-content: center;
 }
-
