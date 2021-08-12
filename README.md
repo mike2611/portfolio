@@ -10,8 +10,6 @@
 - HtML, CSS
 - VSCode
 
-## Live Demo
-
 ## Authors
 
 👤 **Miguel Angel Puentes**
