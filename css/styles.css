@@ -1,32 +1,31 @@
-html{  
+html {
   height: 100%;
 }
 
-body{
+body {
   margin: 0;
   height: 100%;
-  background: #1C1A19 url('../images/backImage.png') right top no-repeat; 
+  background: #1c1a19 url('../images/backImage.png') right top no-repeat;
   background-size: contain;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 72px;
-  background-color: #3E3C3C;
-  min-width: 200;
+  background-color: #3e3c3c;
 }
 
-#header-name{
-  font-family: Inter;
+#header-name {
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  color: #FFFFFF;
+  color: white;
 }
 
-#items-container{
+#items-container {
   display: flex;
   list-style-type: none;
   align-items: center;
@@ -34,29 +33,29 @@ header{
   width: 18rem;
 }
 
-.header-item{
-  font-family: Inter;
+.header-item {
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
-  color: #FFFFFF;
+  color: white;
 }
 
-i{
+i {
   vertical-align: bottom;
 }
 
-#header-menu{
+#header-menu {
   display: none;
 }
 
-#principal-container{
+#principal-container {
   display: flex;
   align-items: center;
   height: 100%;
 }
 
-#navigation-social{
+#navigation-social {
   width: 10%;
   display: flex;
   flex-direction: column;
@@ -64,108 +63,106 @@ i{
   align-items: center;
 }
 
-#social-container{
+#social-container {
   height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#presentation-info{
+#presentation-info {
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: center;
 }
 
-#presentation-info h1{
-  font-family: Crete Round;
+#presentation-info h1 {
+  font-family: Crete Round, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
   line-height: 81px;
-  color:  #F55800;
+  color: #f55800;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-#presentation-info h2{
-  font-family: Inter;
+#presentation-info h2 {
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-#presentation-info p{
-  font-family: Inter;
+#presentation-info p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  color: #FFFFFF;
+  color: white;
   margin-bottom: 0;
   margin-top: 0;
   width: 33.33%;
-} 
+}
 
-
-@media all and (max-width:710px){
-
-  body{
-    background: #1C1A19 url('../images/backImageMobile.png') right bottom no-repeat;
+@media all and (max-width: 710px) {
+  body {
+    background: #1c1a19 url('../images/backImageMobile.png') right bottom no-repeat;
     background-size: contain;
   }
 }
 
-@media all and (max-width:500px){
-  body{
-    background: #1C1A19 url('../images/backImageMobile.png') right bottom no-repeat;
-    background-size: 120px;
+@media all and (max-width: 500px) {
+  body {
+    background: #1c1a19 url('../images/backImageMobile.png') right bottom no-repeat;
+    background-size: 140px;
   }
 
-  #items-container{
+  #items-container {
     display: none;
   }
 
-  #header-menu{
+  #header-menu {
     display: flex;
     justify-content: center;
-    color: #FFFFFF;
+    color: white;
   }
 
-  #header-name{
+  #header-name {
     display: flex;
     justify-content: center;
   }
 
-  #principal-container{
+  #principal-container {
     flex-direction: column;
     height: 80%;
     justify-content: center;
   }
 
-  #presentation-info{
-    height:min-content;
+  #presentation-info {
+    height: min-content;
     align-items: center;
   }
 
-  #presentation-info p{
+  #presentation-info p {
     width: 70%;
     margin-bottom: 10px;
   }
 
-  #navigation-social{
+  #navigation-social {
     width: 60%;
     order: 1;
     flex-direction: row;
     justify-content: flex-start;
   }
 
-  #social-container{
+  #social-container {
     flex-direction: row;
     height: auto;
     width: 200px;
