@@ -1,0 +1,124 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background: #1c1a19 url('../images/backImageMobile.png') right bottom no-repeat;
+  background-size: 140px;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3e3c3c;
+}
+
+#header-name {
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 133%;
+  color: white;
+  margin-left: 20px;
+}
+
+#items-container {
+  display: none;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+}
+
+.header-item {
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+
+#header-menu {
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+
+i {
+  vertical-align: bottom;
+  color: white;
+}
+
+#principal-container {
+  flex-direction: column;
+  height: 80%;
+}
+
+#navigation-social {
+  width: 90%;
+  order: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#social-container {
+  height: auto;
+  width: 200px;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+#presentation-info {
+  flex-direction: column;
+  height: min-content;
+  margin-left: 15px;
+}
+
+#presentation-info h1 {
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 114%;
+  letter-spacing: 0.37px;
+  color: #f55800;
+  margin-top: 20%;
+}
+
+#presentation-info h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133%;
+  color: #fff5e1;
+}
+
+#presentation-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.heading-font {
+  font-family: 'Crete Round', serif;
+}
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.margin-tb-zero {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
