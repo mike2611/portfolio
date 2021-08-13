@@ -113,6 +113,10 @@ i {
   font-family: 'Roboto', sans-serif;
 }
 
+.inter-font{
+  font-family: 'Inter', sans-serif;
+}
+
 .margin-tb-zero {
   margin-bottom: 0;
   margin-top: 0;
@@ -121,4 +125,85 @@ i {
 .flex-center {
   align-items: center;
   justify-content: center;
+}
+
+#work-section header {
+  justify-content: center;
+  border-bottom: 1px solid #212121;
+  margin-bottom: 18%;
+}
+
+#work-section h1 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+#first-card{
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#first-card h2 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 137%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#first-card p {
+  font-size: 16px;
+  line-height: 158%;
+  width: 95%;
+  margin: 0;
+}
+
+.used-languages {
+  list-style-type: none;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0;
+}
+
+#languages div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 40px;
+  border: 1px solid #8993A4;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 133%;
+}
+
+.see-btn { 
+  background-color: #ff6800;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.see-btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #F55800;
+}
+
+.see-btn:active {
+  background-color: #e05304;
+  color: white;
+  border: none;
+}
+
+.see-btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+#first-btn {
+  width: 124px;
+  height: 40px;
 }
