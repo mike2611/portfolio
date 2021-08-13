@@ -6,7 +6,7 @@
 ![screenshot](images/workImage.png)
 ![screenshot](images/cardImage.png)
 ![screenshot](images/aboutImage.png)
-![screenshot](images/portfolioImage.png)
+![screenshot](images/listImage.png)
  
 ## Built With
 
