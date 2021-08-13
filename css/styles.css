@@ -16,7 +16,6 @@ html {
 }
 
 #header-name {
-  justify-content: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 133%;
@@ -39,7 +38,6 @@ html {
 }
 
 #header-menu {
-  justify-content: center;
   background-color: transparent;
   border: none;
   margin-right: 20px;
@@ -105,6 +103,16 @@ i {
   display: flex;
 }
 
+.d-flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
 .heading-font {
   font-family: 'Crete Round', serif;
 }
@@ -122,17 +130,11 @@ i {
   margin-top: 0;
 }
 
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
 #work-section {
   margin-top: 20%;
 }
 
 #work-section header {
-  justify-content: center;
   border-bottom: 1px solid #212121;
   margin-bottom: 18%;
 }
@@ -215,7 +217,6 @@ i {
 #work-cards {
   display: grid;
   grid-template-rows: repeat(4, 26%);
-  justify-content: center;
   align-items: center;
 }
 
@@ -252,7 +253,6 @@ i {
 .card-btn {
   width: 100%;
   height: 48px;
-  justify-content: center;
   align-items: center;
   font-size: 17px;
   font-weight: bold;
@@ -263,6 +263,93 @@ i {
   padding: 18% 0 0 10px;
   width: 80%;
 }
+
+#me-section {
+  background-color: #1c1a19;
+  margin-top: 40%;
+}
+
+#about-me{
+  background: #1c1a19 url('../images/meImage.png') right bottom no-repeat;
+  height: 40rem;
+  margin-bottom: 20%;
+}
+
+#me-container{
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+  width: 90%;
+  margin-top: 70px;
+}
+
+#about-me h1 {
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 122%;
+  color: #ff6b00;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#about-me p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #f4f5f7;
+  margin-top: 0;
+}
+
+#about-me button {
+  width: 161px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 141%;
+}
+
+#me-list {
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 134%;
+  color: #ff6b00;
+  list-style-type: none;
+}
+
+#me-list ul {
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  line-height: 194%;
+  font-weight: normal;
+  color: white;
+  list-style-type: none;
+}
+
+.item-title{
+  color: white;
+}
+
+.list-title{
+  margin: 20px;
+}
+
+#item-lan {
+  list-style-type: square;
+}
+
+#item-fram { 
+  list-style-type: square;
+}
+
+#item-skills{
+  list-style-type:disc;
+}
+
+
+
 
 
 
