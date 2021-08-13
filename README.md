@@ -1,6 +1,6 @@
 # Portfolio
 
->  In this project, I set up a "Hello World" repository. Applying the best practices that I learned.
+>  In this project, I set up a header and a headline section for what will be a portfolio.
 
 ![screenshot](images/portfolioImage.png)
 
