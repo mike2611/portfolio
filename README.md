@@ -1,8 +1,9 @@
 # Portfolio
 
->  In this project, I set up a header and a headline section for what will be a portfolio.
+>  In this project, I set up the mobile version of a portfolio.
 
 ![screenshot](images/portfolioImage.png)
+![screenshot](images/workImage.png)
 
  
 ## Built With
