@@ -127,6 +127,10 @@ i {
   justify-content: center;
 }
 
+#work-section {
+  margin-top: 20%;
+}
+
 #work-section header {
   justify-content: center;
   border-bottom: 1px solid #212121;
@@ -207,3 +211,58 @@ i {
   width: 124px;
   height: 40px;
 }
+
+#work-cards {
+  display: grid;
+  grid-template-rows: repeat(4, 26%);
+  justify-content: center;
+  align-items: center;
+}
+
+.work-card {
+  background:url('../images/workBG.png') no-repeat;
+  background-size: cover;
+}
+
+.work-card h1 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 137%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.work-card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+}
+
+.card-languages {
+  margin-top: 0;
+}
+
+.card-languages div {
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  color: white;
+}
+
+.card-btn {
+  width: 100%;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 141%;
+}
+
+.card-container {
+  padding: 18% 0 0 10px;
+  width: 80%;
+}
+
+
+
