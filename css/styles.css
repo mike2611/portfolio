@@ -60,7 +60,7 @@ i {
   align-items: center;
 }
 
-#social-container {
+.social-container {
   height: auto;
   width: 200px;
   justify-content: space-around;
@@ -347,3 +347,46 @@ i {
 #item-skills {
   list-style-type: disc;
 }
+
+footer{
+  flex-direction: column;
+}
+
+#footer-title {
+  text-align: center;
+  color: #172b4d;
+  font-style: normal;
+  font-size: 32px;
+}
+
+#contact-form {
+  flex-direction: column;
+}
+
+.input-contact {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+#area-contact {
+  border: none;
+  height: 114px;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+#contact-btn{
+  width: 131px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 141%;
+  align-self: center;
+  align-items: center;
+}
+
+
+

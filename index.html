@@ -35,7 +35,7 @@
     <section id="headline">
         <section class="d-flex flex-center" id="principal-container">
             <nav class="d-flex" id="navigation-social">
-                <ul class="d-flex" id="social-container">
+                <ul class="d-flex social-container">
                     <li class="social-logos">
                         <a href="#">
                             <img src="images/github.png" alt="github">
@@ -260,19 +260,19 @@
         </section>
     </section>
 
-    <footer>
-        <h2>
+    <footer class="d-flex">
+        <h2 class="inter-font" id="footer-title">
             I'm always interested in hearing about new projects, 
             so if you'd like to chat please get in touch.
         </h2>
-        <form action="" method="POST">
-            <input type="text" name="user_name" placeholder="Full name"  maxlength="30" required>
-            <input type="email" name="user_email" placeholder="Email address" required>
-            <textarea name="user_text" id="user_text" maxlength="500" required>Enter text here</textarea>
-            <button  class="see-btn d-flex-center" type="submit">Get in touch</button>
+        <form class="d-flex" action="https://formspree.io/f/xwkawbaz" method="POST" name="contact" id="contact-form">
+            <input class="inter-font input-contact" type="text" name="user_name" placeholder="Full name"  maxlength="30" required>
+            <input class="inter-font input-contact" type="email" name="user_email" placeholder="Email address" required>
+            <textarea class="inter-font" id="area-contact" name="user_text" id="user-text" maxlength="500" required>Enter text here</textarea>
+            <button class="see-btn d-flex-center inter-font" type="submit" id="contact-btn">Get in touch</button>
         </form>
-        <nav class="d-flex" id="navigation-social">
-            <ul class="d-flex" id="social-container">
+        <nav class="d-flex-center">
+            <ul class="d-flex social-container">
                 <li class="social-logos">
                     <a href="#">
                         <img src="images/github.png" alt="github">
