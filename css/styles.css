@@ -383,9 +383,13 @@ footer {
   border: none;
   background-color: #fbf8f7;
   height: 114px;
+  margin-bottom: 20px;
+}
+
+#area-contact::placeholder{
   font-size: 15px;
   line-height: 160%;
-  margin-bottom: 20px;
+  color: black;
 }
 
 #contact-btn {
