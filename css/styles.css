@@ -60,7 +60,7 @@ i {
   align-items: center;
 }
 
-#social-container {
+.social-container {
   height: auto;
   width: 200px;
   justify-content: space-around;
@@ -346,4 +346,82 @@ i {
 
 #item-skills {
   list-style-type: disc;
+}
+
+footer {
+  flex-direction: column;
+  padding-top: 20%;
+}
+
+#footer-title {
+  align-self: center;
+  width: 85%;
+  text-align: center;
+  color: #172b4d;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 137%;
+  margin-bottom: 50px;
+}
+
+#contact-form {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.input-contact {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+  font-size: 15px;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+#area-contact {
+  border: none;
+  background-color: #fbf8f7;
+  height: 114px;
+  margin-bottom: 20px;
+}
+
+#area-contact::placeholder {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+}
+
+#contact-btn {
+  width: 131px;
+  height: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 141%;
+  align-self: center;
+  align-items: center;
+}
+
+#footer-social {
+  border-top: 1px solid #dfe1e6;
+  margin-top: 30%;
+}
+
+.header-logos {
+  color: #dbd8d7;
+  font-size: 20px;
+}
+
+.footer-logos {
+  color: #505f79;
+  font-size: 20px;
+}
+
+#bottom-line {
+  border-top: 5px solid #0d151e;
+  width: 134px;
+  margin: 10px;
+  align-self: center;
+  border-radius: 20%;
 }

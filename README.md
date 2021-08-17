@@ -7,6 +7,8 @@
 ![screenshot](images/cardImage.png)
 ![screenshot](images/aboutImage.png)
 ![screenshot](images/listImage.png)
+![screenshot](images/contactImage.png)
+![screenshot](images/footerImage.png)
  
 ## Built With
 
