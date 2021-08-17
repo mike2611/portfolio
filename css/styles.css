@@ -348,7 +348,7 @@ i {
   list-style-type: disc;
 }
 
-footer{
+footer {
   flex-direction: column;
   padding-top: 20%;
 }
@@ -414,12 +414,10 @@ footer{
   font-size: 20px;
 }
 
-#bottom-line{
+#bottom-line {
   border-top: 5px solid #0d151e;
   width: 134px;
   margin: 10px;
   align-self: center;
   border-radius: 20%;
 }
-
-
