@@ -386,7 +386,7 @@ footer {
   margin-bottom: 20px;
 }
 
-#area-contact::placeholder{
+#area-contact::placeholder {
   font-size: 15px;
   line-height: 160%;
   color: black;
