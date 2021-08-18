@@ -25,10 +25,6 @@ html {
 
 #items-container {
   display: none;
-  list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  width: 18rem;
 }
 
 .header-item {
@@ -427,6 +423,22 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  #principal-header {
+    justify-content: space-around;
+  }
+
+  #header-menu {
+    display: none;
+  }
+
+  #items-container {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 18rem;
+  }
+
   #headline {
     background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
     background-size: 50%;
