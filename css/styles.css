@@ -425,3 +425,54 @@ footer {
   align-self: center;
   border-radius: 20%;
 }
+
+@media screen and (min-width: 600px) {
+  #headline {
+    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
+    background-size: 50%;
+  }
+
+  #principal-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  #navigation-social {
+    width: 100px;
+    text-align: center;
+  }
+
+  #navigation-social ul {
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+  }
+
+  #presentation-info {
+    order: 2;
+  }
+
+  #presentation-info p {
+    width: 50%;
+  }
+
+  #presentation-info h1 {
+    margin-top: 0;
+  }
+
+}
+
+
+@media screen and (min-width: 1000px){
+  #headline {
+    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
+    background-size: contain;
+  }
+
+  #presentation-info p {
+    width: 470px;
+  }
+
+}
