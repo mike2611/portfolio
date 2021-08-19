@@ -2,6 +2,11 @@ html {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #headline {
   margin: 0;
   height: 100%;
@@ -234,6 +239,7 @@ i {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
+  cursor: pointer;
 }
 
 .see-btn:active {
@@ -497,6 +503,11 @@ footer {
     align-items: center;
   }
 
+  .work-card:hover > .card-container > header,
+  .work-card:hover > .card-container > .inter-font {
+    opacity: 0%;
+  }
+
   #work-section header {
     border: none;
     justify-content: flex-start;
@@ -523,15 +534,20 @@ footer {
   }
 
   #card-image {
-    width: 58%;
+    width: 50%;
     margin: 0 0 10px 18px;
   }
 
   #info-container {
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 30px;
-    width: 370px;
+    margin-left: 25px;
+    width: 40%;
+    flex-wrap: wrap;
+  }
+
+  #info-container #languages {
+    width: 260px;
   }
 
   .card-container h2 {
@@ -555,13 +571,23 @@ footer {
     flex-wrap: wrap;
   }
 
+  .card-btn {
+    display: none;
+  }
+
+  .work-card:hover > .card-container > .used-languages {
+    display: none;
+  }
+
+  .work-card:hover > .see-btn {
+    display: flex;
+    margin-top: 26px;
+  }
+
   .work-card:hover {
     background: url('../images/hoverWorkBG.svg') no-repeat;
     background-size: cover;
-  }
-
-  .card-btn {
-    display: none;
+    cursor: pointer;
   }
 
   #me-section {
@@ -655,6 +681,10 @@ footer {
   .work-card {
     width: 45%;
   }
+
+  #card-image {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -670,6 +700,19 @@ footer {
   #me-section {
     background: #1c1a19 url('../images/desktopMeImage.svg') right 20% no-repeat;
     background-size: 40%;
+  }
+
+  #card-image {
+    width: 58%;
+    margin: 0 0 10px 30px;
+  }
+
+  #info-container {
+    width: 370px;
+  }
+
+  #info-container #languages {
+    width: 300px;
   }
 
   #about-me {
