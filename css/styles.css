@@ -2,6 +2,11 @@ html {
   height: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #headline {
   margin: 0;
   height: 100%;
@@ -25,10 +30,6 @@ html {
 
 #items-container {
   display: none;
-  list-style-type: none;
-  align-items: center;
-  justify-content: space-between;
-  width: 18rem;
 }
 
 .header-item {
@@ -69,8 +70,9 @@ i {
 }
 
 .work-card {
-  background: url('../images/workBG.png') no-repeat;
+  background: url('../images/workBG.svg') no-repeat;
   background-size: cover;
+  margin: 10px;
 }
 
 .work-card h2 {
@@ -159,7 +161,11 @@ i {
   margin-bottom: 18%;
 }
 
-#work-section h2 {
+#line-works {
+  display: none;
+}
+
+#work-title {
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
@@ -189,7 +195,7 @@ i {
 .used-languages {
   list-style-type: none;
   justify-content: space-between;
-  width: 80%;
+  width: 240px;
   padding: 0;
 }
 
@@ -201,6 +207,13 @@ i {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
   color: white;
+}
+
+#languages {
+  list-style-type: none;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0;
 }
 
 #languages div {
@@ -226,6 +239,7 @@ i {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
+  cursor: pointer;
 }
 
 .see-btn:active {
@@ -245,8 +259,7 @@ i {
 }
 
 #work-cards {
-  display: grid;
-  grid-template-rows: repeat(4, 26%);
+  flex-direction: column;
   align-items: center;
 }
 
@@ -266,7 +279,7 @@ i {
 
 #me-section {
   background-color: #1c1a19;
-  margin-top: 40%;
+  margin-top: 150px;
 }
 
 #about-me {
@@ -280,6 +293,10 @@ i {
   border-bottom: 2px solid gray;
   width: 90%;
   margin-top: 70px;
+}
+
+#me-section hr {
+  display: none;
 }
 
 #about-me h2 {
@@ -308,6 +325,7 @@ i {
 
 #me-list {
   padding: 0;
+  padding-bottom: 80px;
   flex-direction: column;
   align-items: center;
   font-weight: bold;
@@ -424,4 +442,284 @@ footer {
   margin: 10px;
   align-self: center;
   border-radius: 20%;
+}
+
+@media screen and (min-width: 600px) {
+  #principal-header {
+    justify-content: space-around;
+  }
+
+  #header-menu {
+    display: none;
+  }
+
+  #items-container {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 18rem;
+  }
+
+  #headline {
+    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
+    background-size: 50%;
+  }
+
+  #principal-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+
+  #navigation-social {
+    width: 100px;
+    text-align: center;
+  }
+
+  #navigation-social ul {
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-around;
+  }
+
+  #presentation-info {
+    order: 2;
+  }
+
+  #presentation-info p {
+    width: 50%;
+  }
+
+  #presentation-info h1 {
+    margin-top: 0;
+  }
+
+  #work-section {
+    margin-top: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .work-card:hover > .card-container > header,
+  .work-card:hover > .card-container > .inter-font {
+    opacity: 0%;
+  }
+
+  #work-section header {
+    border: none;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #work-title {
+    width: 310px;
+    height: 50px;
+    padding-left: 10%;
+  }
+
+  #line-works {
+    display: block;
+    width: 55%;
+    margin-left: 4%;
+  }
+
+  #first-card {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  #card-image {
+    width: 50%;
+    margin: 0 0 10px 18px;
+  }
+
+  #info-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px;
+    width: 40%;
+    flex-wrap: wrap;
+  }
+
+  #info-container #languages {
+    width: 260px;
+  }
+
+  .card-container h2 {
+    padding: 0 0 10px 0;
+  }
+
+  #info-container h2 {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  #work-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .used-languages {
+    margin-top: 20px;
+    width: 230px;
+    flex-wrap: wrap;
+  }
+
+  .card-btn {
+    display: none;
+  }
+
+  .work-card:hover > .card-container > .used-languages {
+    display: none;
+  }
+
+  .work-card:hover > .see-btn {
+    display: flex;
+    margin-top: 26px;
+  }
+
+  .work-card:hover {
+    background: url('../images/hoverWorkBG.svg') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  #me-section {
+    background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
+    background-size: 42%;
+    margin-bottom: 40px;
+  }
+
+  #about-me {
+    width: 50%;
+    margin-left: 8%;
+    background: #1c1a19;
+    height: 500px;
+  }
+
+  #me-container header {
+    margin-top: 100px;
+  }
+
+  #me-container p {
+    margin-bottom: 40px;
+  }
+
+  #me-container {
+    border: none;
+  }
+
+  #me-section hr {
+    display: block;
+    width: 80%;
+    border: 2px solid gray;
+  }
+
+  #me-list {
+    display: grid;
+    grid-template-areas: 'left middle right';
+    margin-top: 80px;
+  }
+
+  #me-list li {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  #item-lan {
+    grid-area: left;
+  }
+
+  #item-fram {
+    grid-area: middle;
+  }
+
+  #item-skills {
+    grid-area: right;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+
+  #footer-title {
+    width: 35%;
+    text-align: left;
+    align-self: flex-start;
+    margin: 0 30px 0 50px;
+  }
+
+  #contact-form {
+    width: 50%;
+  }
+
+  #contact-btn {
+    align-self: flex-start;
+  }
+
+  #footer-social {
+    margin-top: 140px;
+    width: 100%;
+  }
+
+  #bottom-line {
+    display: none;
+  }
+}
+
+@media (min-width: 685px) and (max-width: 999px) {
+  .work-card {
+    width: 45%;
+  }
+
+  #card-image {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #headline {
+    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
+    background-size: contain;
+  }
+
+  #presentation-info p {
+    width: 470px;
+  }
+
+  #me-section {
+    background: #1c1a19 url('../images/desktopMeImage.svg') right 20% no-repeat;
+    background-size: 40%;
+  }
+
+  #card-image {
+    width: 58%;
+    margin: 0 0 10px 30px;
+  }
+
+  #info-container {
+    width: 370px;
+  }
+
+  #info-container #languages {
+    width: 300px;
+  }
+
+  #about-me {
+    width: 500px;
+  }
+
+  .work-card {
+    width: 31%;
+  }
 }
