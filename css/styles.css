@@ -185,7 +185,7 @@ i {
 .used-languages {
   list-style-type: none;
   justify-content: space-between;
-  width: 80%;
+  width: 240px;
   padding: 0;
 }
 
@@ -197,6 +197,13 @@ i {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
   color: white;
+}
+
+#languages {
+  list-style-type: none;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0;
 }
 
 #languages div {
