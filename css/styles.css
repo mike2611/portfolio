@@ -155,6 +155,10 @@ i {
   margin-bottom: 18%;
 }
 
+#line-works {
+  display: none;
+}
+
 #work-section h2 {
   font-weight: normal;
   font-size: 40px;
@@ -485,7 +489,47 @@ footer {
     margin-top: 0;
   }
 
-  /* Aqui debe ir la parte de las work cards */
+  #work-section {
+    margin-top: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  #work-section header {
+    border: none;
+    justify-content: flex-start;
+    align-items:baseline;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  #work-section h2 {
+    width: 310px;
+    height: 50px;
+    padding-left: 10%;
+  }
+
+  #first-card {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  #info-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  #info-container h2 {
+    padding-left: 0;
+  }
+
+  #line-works {
+    display: block;
+    width: 55%;
+    margin-left: 4%;
+  }
 
   #me-section {
     background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
@@ -521,6 +565,8 @@ footer {
     display: grid;
     grid-template-areas:
     'left middle right';
+    margin-top: 80px;
+    padding-bottom: 80px;
   }
 
   #me-list li{
@@ -571,7 +617,6 @@ footer {
   #bottom-line {
     display: none;
   }
-
 
 }
 
