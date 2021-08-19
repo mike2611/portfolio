@@ -278,6 +278,10 @@ i {
   margin-top: 70px;
 }
 
+#me-section hr {
+  display: none;
+}
+
 #about-me h2 {
   font-weight: normal;
   font-size: 72px;
@@ -474,6 +478,63 @@ footer {
     margin-top: 0;
   }
 
+  /* Aqui debe ir la parte de las work cards */
+
+  #me-section {
+    background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
+    background-size: 42%;
+  }
+
+  #about-me { 
+    width: 50%;
+    margin-left: 8%;
+    background: #1c1a19;
+    height: 500px;
+  }
+
+  #me-container header {
+    margin-top: 100px;
+  }
+
+  #me-container p {
+    margin-bottom: 40px;
+  }
+
+  #me-container{
+    border: none;
+  }
+
+  #me-section hr {
+    display: block;
+    width: 80%;
+    border: 2px solid gray;
+  }
+
+  #me-list {
+    display: grid;
+    grid-template-areas:
+    'left middle right';
+  }
+
+  #me-list li{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  #item-lan {
+    grid-area: left;
+  }
+
+  #item-fram {
+    grid-area: middle;
+  }
+
+  #item-skills {
+    grid-area: right;
+  }
+
+
 }
 
 
@@ -485,6 +546,15 @@ footer {
 
   #presentation-info p {
     width: 470px;
+  }
+
+  #me-section {
+    background: #1c1a19 url('../images/desktopMeImage.svg') right 20% no-repeat;
+    background-size: 40%;
+  }
+
+  #about-me { 
+    width: 500px;
   }
 
 }
