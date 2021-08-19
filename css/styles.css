@@ -534,6 +534,37 @@ footer {
     grid-area: right;
   }
 
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+
+  #footer-title {
+    width: 35%;
+    text-align: left;
+    align-self: flex-start;
+    margin: 0 30px 0 50px;
+  }
+
+  #contact-form {
+    width: 50%;
+  }
+
+  #contact-btn {
+    align-self: flex-start;
+  }
+
+  #footer-social {
+    margin-top: 140px;
+    width: 100%;
+  }
+
+  #bottom-line {
+    display: none;
+  }
+
 
 }
 
