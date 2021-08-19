@@ -67,6 +67,7 @@ i {
 .work-card {
   background: url('../images/workBG.svg') no-repeat;
   background-size: cover;
+  margin: 10px;
 }
 
 .work-card h2 {
@@ -159,7 +160,7 @@ i {
   display: none;
 }
 
-#work-section h2 {
+#work-title {
   font-weight: normal;
   font-size: 40px;
   line-height: 52px;
@@ -252,8 +253,7 @@ i {
 }
 
 #work-cards {
-  display: grid;
-  grid-template-rows: repeat(4, 26%);
+  flex-direction: column;
   align-items: center;
 }
 
@@ -273,7 +273,7 @@ i {
 
 #me-section {
   background-color: #1c1a19;
-  margin-top: 40%;
+  margin-top: 150px;
 }
 
 #about-me {
@@ -319,6 +319,7 @@ i {
 
 #me-list {
   padding: 0;
+  padding-bottom: 80px;
   flex-direction: column;
   align-items: center;
   font-weight: bold;
@@ -504,25 +505,10 @@ footer {
     margin-bottom: 50px;
   }
 
-  #work-section h2 {
+  #work-title {
     width: 310px;
     height: 50px;
     padding-left: 10%;
-  }
-
-  #first-card {
-    flex-direction: row;
-    width: 80%;
-  }
-
-  #info-container {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 20px;
-  }
-
-  #info-container h2 {
-    padding-left: 0;
   }
 
   #line-works {
@@ -531,9 +517,57 @@ footer {
     margin-left: 4%;
   }
 
+  #first-card {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  #card-image {
+    width: 58%;
+    margin: 0 0 10px 18px;
+  }
+
+  #info-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    width: 370px;
+  }
+
+  #info-container h2 {
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+  #work-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .card-container h2{
+    padding: 0 0 10px 0;
+  }
+
+  .used-languages {
+    margin-top: 20px;
+    width: 230px;
+    flex-wrap: wrap;
+  }
+
+  .work-card:hover {
+    background: url('../images/hoverWorkBG.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .card-btn {
+    display: none;
+  }
+ 
   #me-section {
     background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
     background-size: 42%;
+    margin-bottom: 40px;
   }
 
   #about-me { 
@@ -566,7 +600,6 @@ footer {
     grid-template-areas:
     'left middle right';
     margin-top: 80px;
-    padding-bottom: 80px;
   }
 
   #me-list li{
@@ -620,8 +653,14 @@ footer {
 
 }
 
+@media (min-width: 685px) and (max-width: 999px) {
+  .work-card {
+    width: 45%;
+  }
+} 
 
-@media screen and (min-width: 1000px){
+
+@media screen and (min-width: 1000px) { 
   #headline {
     background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
     background-size: contain;
@@ -638,6 +677,10 @@ footer {
 
   #about-me { 
     width: 500px;
+  }
+
+  .work-card {
+    width: 31%;
   }
 
 }
