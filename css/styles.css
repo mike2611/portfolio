@@ -500,7 +500,7 @@ footer {
   #work-section header {
     border: none;
     justify-content: flex-start;
-    align-items:baseline;
+    align-items: baseline;
     width: 100%;
     margin-bottom: 50px;
   }
@@ -534,6 +534,10 @@ footer {
     width: 370px;
   }
 
+  .card-container h2 {
+    padding: 0 0 10px 0;
+  }
+
   #info-container h2 {
     padding-left: 0;
     margin-top: 0;
@@ -543,10 +547,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
-  }
-
-  .card-container h2{
-    padding: 0 0 10px 0;
   }
 
   .used-languages {
@@ -563,14 +563,14 @@ footer {
   .card-btn {
     display: none;
   }
- 
+
   #me-section {
     background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
     background-size: 42%;
     margin-bottom: 40px;
   }
 
-  #about-me { 
+  #about-me {
     width: 50%;
     margin-left: 8%;
     background: #1c1a19;
@@ -585,7 +585,7 @@ footer {
     margin-bottom: 40px;
   }
 
-  #me-container{
+  #me-container {
     border: none;
   }
 
@@ -597,12 +597,11 @@ footer {
 
   #me-list {
     display: grid;
-    grid-template-areas:
-    'left middle right';
+    grid-template-areas: 'left middle right';
     margin-top: 80px;
   }
 
-  #me-list li{
+  #me-list li {
     display: flex;
     justify-content: center;
     height: 100%;
@@ -650,17 +649,15 @@ footer {
   #bottom-line {
     display: none;
   }
-
 }
 
 @media (min-width: 685px) and (max-width: 999px) {
   .work-card {
     width: 45%;
   }
-} 
+}
 
-
-@media screen and (min-width: 1000px) { 
+@media screen and (min-width: 1000px) {
   #headline {
     background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
     background-size: contain;
@@ -675,12 +672,11 @@ footer {
     background-size: 40%;
   }
 
-  #about-me { 
+  #about-me {
     width: 500px;
   }
 
   .work-card {
     width: 31%;
   }
-
 }
