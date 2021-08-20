@@ -462,6 +462,22 @@ footer {
     width: 18rem;
   }
 
+  #principal-header > #header-name,
+  #principal-header > #items-container {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 120%;
+    }
+
+    to {
+      justify-content: space-around;
+    }
+  }
+
   #headline {
     background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
     background-size: 50%;
