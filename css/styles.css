@@ -233,6 +233,7 @@ i {
   color: white;
   font-weight: bold;
   border: none;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .see-btn:hover {
@@ -536,6 +537,11 @@ footer {
   #card-image {
     width: 50%;
     margin: 0 0 10px 18px;
+    transition: transform 1s;
+  }
+
+  #card-image:hover {
+    transform: scale(1.05);
   }
 
   #info-container {
@@ -573,6 +579,10 @@ footer {
 
   .card-btn {
     display: none;
+  }
+
+  .work-card {
+    transition: background 1s ease-in-out;
   }
 
   .work-card:hover > .card-container > .used-languages {
