@@ -537,6 +537,11 @@ footer {
   #card-image {
     width: 50%;
     margin: 0 0 10px 18px;
+    transition: transform 1s;
+  }
+
+  #card-image:hover {
+    transform: scale(1.05);
   }
 
   #info-container {
@@ -574,14 +579,6 @@ footer {
 
   .card-btn {
     display: none;
-  }
-
-  #card-image {
-    transition: transform 1s;
-  }
-
-  #card-image:hover {
-    transform: scale(1.05);
   }
 
   .work-card {
