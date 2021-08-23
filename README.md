@@ -1,6 +1,6 @@
 # Portfolio
 
->  In this project, I set up the mobile version of a portfolio.
+>  In this project, I set up a portfolio.
 
 ![screenshot](images/portfolioImage.png)
 ![screenshot](images/workImage.png)

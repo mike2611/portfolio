@@ -233,6 +233,7 @@ i {
   color: white;
   font-weight: bold;
   border: none;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .see-btn:hover {
@@ -461,6 +462,22 @@ footer {
     width: 18rem;
   }
 
+  #principal-header > #header-name,
+  #principal-header > #items-container {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 120%;
+    }
+
+    to {
+      justify-content: space-around;
+    }
+  }
+
   #headline {
     background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
     background-size: 50%;
@@ -536,6 +553,11 @@ footer {
   #card-image {
     width: 50%;
     margin: 0 0 10px 18px;
+    transition: transform 1s;
+  }
+
+  #card-image:hover {
+    transform: scale(1.05);
   }
 
   #info-container {
@@ -573,6 +595,10 @@ footer {
 
   .card-btn {
     display: none;
+  }
+
+  .work-card {
+    transition: background 1s ease-in-out;
   }
 
   .work-card:hover > .card-container > .used-languages {
