@@ -20,9 +20,13 @@ body {
   background-color: #3e3c3c;
 }
 
+a {
+  text-decoration: none;
+}
+
 #header-name {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 133%;
   color: white;
   margin-left: 20px;
@@ -32,9 +36,9 @@ body {
   display: none;
 }
 
-.header-item {
+.header-item a {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 
@@ -223,9 +227,10 @@ i {
   height: 40px;
   border: 1px solid #8993a4;
   padding: 0 10px;
-  font-weight: 500;
   font-size: 15px;
   line-height: 133%;
+  color: #ff6800;
+  font-weight: bolder;
 }
 
 .see-btn {
@@ -310,7 +315,7 @@ i {
 }
 
 #about-me p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   color: #f4f5f7;
   margin-top: 0;
@@ -433,7 +438,7 @@ footer {
 }
 
 .footer-logos {
-  color: #505f79;
+  color: #172b4d;
   font-size: 20px;
 }
 
