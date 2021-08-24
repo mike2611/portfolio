@@ -20,6 +20,10 @@ body {
   background-color: #3e3c3c;
 }
 
+a {
+  text-decoration: none;
+}
+
 #header-name {
   font-weight: bold;
   font-size: 20px;
@@ -32,7 +36,7 @@ body {
   display: none;
 }
 
-.header-item {
+.header-item a {
   font-weight: 600;
   font-size: 18px;
   color: white;
