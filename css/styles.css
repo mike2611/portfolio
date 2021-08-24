@@ -22,7 +22,7 @@ body {
 
 #header-name {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 133%;
   color: white;
   margin-left: 20px;
@@ -34,7 +34,7 @@ body {
 
 .header-item {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
 }
 
@@ -312,7 +312,7 @@ i {
 }
 
 #about-me p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   color: #f4f5f7;
   margin-top: 0;
