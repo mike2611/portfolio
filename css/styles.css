@@ -226,6 +226,8 @@ i {
   font-weight: 500;
   font-size: 15px;
   line-height: 133%;
+  color: #ff6800;
+  font-weight: bolder;
 }
 
 .see-btn {
@@ -433,7 +435,7 @@ footer {
 }
 
 .footer-logos {
-  color: #505f79;
+  color: #172b4d;
   font-size: 20px;
 }
 
