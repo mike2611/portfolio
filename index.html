@@ -23,12 +23,18 @@
 <body>
 
     <header id="principal-header" class="d-flex">
+        <section id="menu-section" class="d-none">
+            <button type="button" id="header-menu-btn">
+                <i class="material-icons">close</i>
+            </button>
+        </section>
+
         <a href="#" class="d-flex-center heading-font" id="header-name">
             <p class="roboto-font">
               Mike Puentes
             </p>
         </a>
-        <nav>
+        <nav id="nav-menu">
             <ul id="items-container">
                 <li class="header-item heading-font">
                     <a href="#">Portfolio</a>
@@ -356,6 +362,6 @@
         </nav>
         <div id="bottom-line"></div>
     </footer>
-
+    <script src="js/file.js"></script>  
 </body>
 </html>

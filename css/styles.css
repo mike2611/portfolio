@@ -14,10 +14,38 @@ body {
   background-size: 120px;
 }
 
+.d-none {
+  display: none!important;
+}
+
 #principal-header {
   justify-content: space-between;
   align-items: center;
   background-color: #3e3c3c;
+}
+
+.hamburger-section {
+  color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 137%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+}
+
+#header-menu-btn {
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+#header-menu-btn i {
+  color: #67798e;
 }
 
 a {
