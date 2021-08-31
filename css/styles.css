@@ -510,7 +510,7 @@ footer {
     display: flex;
   }
 
-  #header-name {
+  #header-name a{
     display: flex;
     justify-content: center;
   }
