@@ -23,12 +23,29 @@
 <body>
 
     <header id="principal-header" class="d-flex">
-        <a href="#" class="d-flex-center heading-font" id="header-name">
-            <p class="roboto-font">
-              Mike Puentes
-            </p>
-        </a>
-        <nav>
+        <nav id="menu-nav" class="d-none">
+            <button type="button" id="header-menu-btn">
+                <i class="material-icons">close</i>
+            </button>
+            <ul id="items-container-menu" class="d-flex">
+                <li class="menu-item">
+                    <a href="#work-section">Portfolio</a>
+                </li>
+                <li class="menu-item">
+                   <a href="#me-section">About</a> 
+                </li>
+                <li class="menu-item">
+                   <a href="#contact-me">Contact</a> 
+                </li> 
+            </ul>
+        </nav>
+
+        <p class="roboto-font" id="header-name">
+            <a href="#" class="d-flex-center heading-font"> 
+                Mike Puentes
+            </a>
+        </p>
+        <nav id="nav-menu">
             <ul id="items-container">
                 <li class="header-item heading-font">
                     <a href="#">Portfolio</a>
@@ -102,16 +119,16 @@
                     the 1500s, when an unknown printer took a standard dummy text.</p>
                 <ul class="d-flex" id="languages">
                     <li>
-                        <div class="inter-font">css</div>
+                        <div class="inter-font d-flex">css</div>
                     </li>
                     <li>
-                        <div class="inter-font">html</div>
+                        <div class="inter-font d-flex">html</div>
                     </li>
                     <li>
-                        <div class="inter-font">bootstrap</div>
+                        <div class="inter-font d-flex">bootstrap</div>
                     </li>
                     <li> 
-                        <div class="inter-font">Ruby</div>
+                        <div class="inter-font d-flex">Ruby</div>
                     </li>
                 </ul>
                 <button class="inter-font see-btn" id="first-btn"  type="button"> See Project </button>
@@ -324,7 +341,7 @@
         </section>
     </section>
 
-    <footer class="d-flex">
+    <footer class="d-flex" id="contact-me">
         <h2 class="inter-font" id="footer-title">
             I'm always interested in hearing about new projects, 
             so if you'd like to chat please get in touch.
@@ -356,6 +373,6 @@
         </nav>
         <div id="bottom-line"></div>
     </footer>
-
+    <script src="js/file.js"></script>  
 </body>
 </html>
