@@ -5,7 +5,7 @@ const menuItems = document.querySelectorAll('.menu-item');
 function showCloseMenu() {
   const menuSection = document.querySelector('#menu-nav');
   const nav = document.querySelector('#nav-menu');
-  const headerName = document.querySelector('#header-name');
+  const headerName = document.querySelector('#header-name a');
 
   menuSection.classList.toggle('d-none');
   menuSection.classList.toggle('d-flex');
