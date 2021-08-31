@@ -15,7 +15,7 @@ body {
 }
 
 .d-none {
-  display: none!important;
+  display: none;
 }
 
 #principal-header {
@@ -500,6 +500,19 @@ footer {
 @media screen and (min-width: 600px) {
   #principal-header {
     justify-content: space-around;
+  }
+
+  #menu-nav {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex;
+  }
+
+  #header-name {
+    display: flex;
+    justify-content: center;
   }
 
   #header-menu {

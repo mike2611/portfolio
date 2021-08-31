@@ -11,6 +11,7 @@ function showCloseMenu() {
   menuSection.classList.toggle('d-flex');
   nav.classList.toggle('d-none');
   headerName.classList.toggle('d-none');
+  headerName.classList.toggle('d-flex-center');
 }
 
 hamburgerBtn.addEventListener('click', showCloseMenu);
