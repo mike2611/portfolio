@@ -87,6 +87,21 @@ Object.keys(projects).forEach((project) => {
   containerCards.appendChild(cardClone);
 });
 
+function popUpWindow() {
+  const modalContainer = document.querySelector('#modal-container');
+  modalContainer.classList.toggle('d-none');
+  modalContainer.classList.toggle('d-flex');
+}
+
+const showModal = document.querySelectorAll('.show-modal');
+const closeModal = document.querySelector('#close-modal');
+
+showModal.forEach((btn) => {
+  btn.addEventListener('click', popUpWindow);
+});
+
+closeModal.addEventListener('click', popUpWindow);
+
 const hamburgerBtn = document.querySelector('#header-menu');
 const closeBtn = document.querySelector('#header-menu-btn');
 const menuItems = document.querySelectorAll('.menu-item');

@@ -340,6 +340,23 @@ a {
   height: 100px;
 }
 
+#modal-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal {
+  background-color: white;
+  width: 80%;
+  height: 100vh;
+}
+
 #me-section {
   background-color: #1c1a19;
   margin-top: 150px;
