@@ -24,26 +24,12 @@ body {
   background-color: #3e3c3c;
 }
 
-.hamburger-section {
-  color: #fff5e1;
-  font-family: 'Inter', sans-serif;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 137%;
-  height: 100vh;
-  display: flex;
-  width: 100%;
-}
-
 #header-menu-btn {
   border: none;
   background: transparent;
-  width: 100%;
   height: 40px;
   margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
-
+  align-self: flex-end;
 }
 
 #header-menu-btn i {
@@ -67,13 +53,10 @@ a {
 }
 
 #items-container-menu {
-  display: flex;
   list-style: none;
   flex-direction: column;
-
- width: 80%;
+  width: 80%;
   height: 100%;
-
 }
  
 #items-container-menu ul {
@@ -83,7 +66,6 @@ a {
 } 
  
 .menu-item{
-  font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -107,9 +89,11 @@ a {
   background-color: transparent;
   border: none;
 }
-#menu-section{
+
+#menu-nav{
   height: 100vh;
   width: 100%;
+  flex-direction: column;
 }
 
 i {
@@ -285,7 +269,6 @@ i {
 }
 
 #languages div {
-  display: flex;
   align-items: center;
   background-color: white;
   height: 40px;
