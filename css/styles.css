@@ -40,7 +40,7 @@ a {
   text-decoration: none;
 }
 
-#header-name {
+#header-name a{
   font-weight: bold;
   font-size: 20px;
   line-height: 133%;
