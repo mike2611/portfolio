@@ -71,7 +71,6 @@ const firstCardTechnologies = firstCardChilds[3].querySelector('#languages');
 
 Object.keys(projects).forEach((project) => {
   const cardClone = card.cloneNode(true);
-  //cardClone.style.backgroundImage = `url('${projects[project].image}')`;
   cardClone.classList.remove('d-none');
   const cardContainer = cardClone.firstElementChild;
   const childsCardContainer = cardContainer.childNodes;

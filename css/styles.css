@@ -323,6 +323,10 @@ a {
   line-height: 141%;
 }
 
+.work-card {
+  width: 80%;
+}
+
 .card-container {
   padding: 18% 0 0 10px;
   width: 80%;
