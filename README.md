@@ -2,21 +2,27 @@
 
 >  In this project, I set up a portfolio.
 
+## Desktop 💻
+![screenshot](images/desktopVersion.png)
+
+## Mobile 📱
 ![screenshot](images/portfolioImage.png)
-![screenshot](images/workImage.png)
-![screenshot](images/cardImage.png)
-![screenshot](images/aboutImage.png)
-![screenshot](images/listImage.png)
-![screenshot](images/contactImage.png)
-![screenshot](images/footerImage.png)
 
 ## Live Demo
 https://mike2611.github.io/portfolio/
  
 ## Built With
 
-- HtML, CSS
+- HtML, CSS, JS
 - VSCode
+
+## Install
+
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by command git clone https://github.com/mike2611/portfolio.git
+- Open index.html in the browser (you can use Live Server extension in Visual Studio Code)
+
 
 ## Authors
 
