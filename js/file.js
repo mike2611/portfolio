@@ -10,7 +10,8 @@ const projects = {
   },
   sketch: {
     name: 'Etch-a-Sketch',
-    description: 'This project is something between a sketchpad and an Etch-A-Sketch.',
+    description: `This project is something between a 
+    sketchpad and an Etch-A-Sketch.`,
     image: 'images/etch.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     live: 'https://mike2611.github.io/etch-a-sketch/',
@@ -25,7 +26,7 @@ const projects = {
     link: 'https://github.com/mike2611/youtube-page',
   },
   rps: {
-    name: 'Youtube Clone',
+    name: 'Rock Paper Scissors',
     description: `In this project, you play against the computer a simple 
     game of rock, paper, scissors first to five wins!`,
     image: 'images/rps.png',
@@ -34,7 +35,7 @@ const projects = {
     link: 'https://github.com/mike2611/rock-paper-scissor/blob/main/README.md',
   },
   google: {
-    name: 'Youtube Clone',
+    name: 'Google Clone',
     description: 'This project is a clone of Google home page.',
     image: 'images/google.png',
     technologies: ['HTML', 'CSS'],
@@ -51,6 +52,20 @@ const projects = {
     link: 'https://github.com/mike2611/mi-catalogo',
   },
 };
+
+const containerCards = document.querySelector('#work-cards');
+const cards = document.querySelectorAll('.work-card');
+const card = cards[0];
+
+Object.keys(projects).forEach((project) => {
+  const cardClone = card.cloneNode(true);
+  cardClone.classList.remove('d-none');
+  const cardContainer = cardClone.firstElementChild;
+  const childsCardContainer = cardContainer.childNodes;
+  childsCardContainer[1].firstElementChild.innerText = projects[project].name;
+  childsCardContainer[3].innerText = projects[project].description;
+  containerCards.appendChild(cardClone);
+});
 
 const hamburgerBtn = document.querySelector('#header-menu');
 const closeBtn = document.querySelector('#header-menu-btn');

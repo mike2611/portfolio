@@ -328,6 +328,14 @@ a {
   width: 80%;
 }
 
+.card-name {
+  height: 50px;
+}
+
+.card-description {
+  height: 100px;
+}
+
 #me-section {
   background-color: #1c1a19;
   margin-top: 150px;
@@ -615,7 +623,7 @@ footer {
 
   #card-image {
     width: 50%;
-    margin: 0 0 10px 18px;
+    margin: 0 0 10px 0;
     transition: transform 1s;
   }
 
