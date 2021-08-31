@@ -1,12 +1,12 @@
 const projects = {
-  odessa: {
-    name: 'Odessa Project',
+  user: {
+    name: 'Users Register',
     description: `This project is a table for users. 
     Where users can be added, deleted, or modified.`,
-    image: '../images/odessa.png',
+    image: '../images/user.png',
     technologies: ['HTML', 'CSS', 'TS'],
-    live: 'https://mike2611.github.io/proyecto-odessa/table',
-    link: 'https://github.com/mike2611/proyecto-odessa',
+    live: 'https://mike2611.github.io/users-register/',
+    link: 'https://github.com/mike2611/users-register',
   },
   sketch: {
     name: 'Etch-a-Sketch',
@@ -57,6 +57,18 @@ const containerCards = document.querySelector('#work-cards');
 const cards = document.querySelectorAll('.work-card');
 const card = cards[0];
 
+const firstCard = document.querySelector('#first-card');
+firstCard.firstElementChild.src = projects.user.image;
+const firstCardChilds = firstCard.childNodes;
+firstCardChilds[3].firstElementChild.innerText = projects.user.name;
+firstCardChilds[3].querySelector('#info-card').innerText = projects.user.description;
+const firstCardTechnologies = firstCardChilds[3].querySelector('#languages');
+(projects.user.technologies).forEach((tech) => {
+  const technology = document.createElement('li');
+  technology.innerHTML = `<div class="inter-font d-flex">${tech}</div>`;
+  firstCardTechnologies.appendChild(technology);
+});
+
 Object.keys(projects).forEach((project) => {
   const cardClone = card.cloneNode(true);
   //cardClone.style.backgroundImage = `url('${projects[project].image}')`;
@@ -65,8 +77,8 @@ Object.keys(projects).forEach((project) => {
   const childsCardContainer = cardContainer.childNodes;
   childsCardContainer[1].firstElementChild.innerText = projects[project].name;
   childsCardContainer[3].innerText = projects[project].description;
-  const technologies = childsCardContainer[5];
 
+  const technologies = childsCardContainer[5];
   (projects[project].technologies).forEach((tech) => {
     const technology = document.createElement('li');
     technology.innerHTML = `<div class="inter-font">${tech}</div>`;

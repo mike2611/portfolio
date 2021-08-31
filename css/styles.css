@@ -261,7 +261,6 @@ a {
 
 #languages {
   list-style-type: none;
-  justify-content: space-between;
   width: 300px;
   padding: 0;
 }
@@ -276,6 +275,7 @@ a {
   line-height: 133%;
   color: #ff6800;
   font-weight: bolder;
+  margin-right: 20px;
 }
 
 .see-btn {
