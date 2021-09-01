@@ -123,6 +123,7 @@ a {
   background: url('../images/workBG.svg') no-repeat;
   background-size: cover;
   margin: 10px;
+  width: 80%;
 }
 
 .work-card h2 {
@@ -326,10 +327,6 @@ a {
   line-height: 141%;
 }
 
-.work-card {
-  width: 80%;
-}
-
 .card-container {
   padding: 18% 0 0 10px;
   width: 80%;
@@ -347,7 +344,7 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  left: 0;   
+  left: 0;
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -380,7 +377,7 @@ a {
   margin-left: 10%;
 }
 
-#languages-modal div{
+#languages-modal div {
   height: 32px;
   font-weight: 600;
   font-size: 13px;
@@ -392,9 +389,6 @@ a {
 #modal-bottom {
   flex-direction: column;
   align-items: center;
-}
-
-#modal-bottom {
   overflow: hidden;
 }
 
@@ -417,12 +411,11 @@ a {
 
 #modal-bottom button {
   background-color: #ff6b00;
-  width: 120px;
   border: none;
   height: 45px;
   width: 134px;
   color: white;
-  margin:0 5px 0 5px;
+  margin: 0 5px 0 5px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 15px;
@@ -430,7 +423,7 @@ a {
 }
 
 #modal-bottom i {
-  margin:0 0 2px 8px;
+  margin: 0 0 2px 8px;
   font-size: 20px;
 }
 
@@ -832,7 +825,7 @@ footer {
     justify-content: center;
   }
 
-  #container-btn button{
+  #container-btn button {
     height: 40px;
   }
 
