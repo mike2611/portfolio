@@ -123,6 +123,7 @@ a {
   background: url('../images/workBG.svg') no-repeat;
   background-size: cover;
   margin: 10px;
+  width: 80%;
 }
 
 .work-card h2 {
@@ -163,7 +164,6 @@ a {
 }
 
 #presentation-info p {
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 150%;
   color: white;
@@ -195,6 +195,10 @@ a {
 
 .inter-font {
   font-family: 'Inter', sans-serif;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
 }
 
 .margin-tb-zero {
@@ -244,7 +248,6 @@ a {
 
 .used-languages {
   list-style-type: none;
-  justify-content: space-between;
   width: 240px;
   padding: 0;
 }
@@ -256,17 +259,17 @@ a {
 .card-languages div {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
+  margin-right: 15px;
   color: white;
 }
 
-#languages {
+.languages {
   list-style-type: none;
-  justify-content: space-between;
-  width: 300px;
+  width: 270px;
   padding: 0;
 }
 
-#languages div {
+.languages div {
   align-items: center;
   background-color: white;
   height: 40px;
@@ -276,6 +279,7 @@ a {
   line-height: 133%;
   color: #ff6800;
   font-weight: bolder;
+  margin-right: 20px;
 }
 
 .see-btn {
@@ -304,7 +308,7 @@ a {
   color: #5b5957;
 }
 
-#first-btn {
+.first-btn {
   width: 124px;
   height: 40px;
 }
@@ -326,6 +330,101 @@ a {
 .card-container {
   padding: 18% 0 0 10px;
   width: 80%;
+}
+
+.card-name {
+  height: 50px;
+}
+
+.card-description {
+  height: 140px;
+}
+
+#modal-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal {
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  width: 95vw;
+  height: 95vh;
+}
+
+#modal-top {
+  justify-content: space-around;
+}
+
+#close-modal {
+  border: none;
+  background: transparent;
+  color: #67798e;
+}
+
+#close-modal i {
+  color: #67798e;
+}
+
+#languages-modal {
+  margin-left: 10%;
+}
+
+#languages-modal div {
+  height: 32px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3c3a39;
+  align-items: center;
+}
+
+#modal-bottom {
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#modal-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-bottom img {
+  width: 80%;
+  max-width: 400px;
+}
+
+#modal-bottom p {
+  width: 95%;
+  color: #344563;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+#modal-bottom button {
+  background-color: #ff6b00;
+  border: none;
+  height: 45px;
+  width: 134px;
+  color: white;
+  margin: 0 5px 0 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 141%;
+}
+
+#modal-bottom i {
+  margin: 0 0 2px 8px;
+  font-size: 20px;
 }
 
 #me-section {
@@ -615,7 +714,7 @@ footer {
 
   #card-image {
     width: 50%;
-    margin: 0 0 10px 18px;
+    margin: 0 0 10px 0;
     transition: transform 1s;
   }
 
@@ -677,6 +776,57 @@ footer {
     background: url('../images/hoverWorkBG.svg') no-repeat;
     background-size: cover;
     cursor: pointer;
+  }
+
+  #modal {
+    height: 80vh;
+    width: 85vw;
+  }
+
+  #modal-top {
+    justify-content: space-between;
+  }
+
+  #modal-top h2 {
+    margin-left: 5%;
+  }
+
+  #close-modal {
+    margin-right: 5%;
+  }
+
+  #languages-modal {
+    margin-left: 5%;
+  }
+
+  #modal-info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #modal-info img {
+    max-width: 60%;
+    margin-left: 5%;
+  }
+
+  #modal-info p {
+    font-size: 16px;
+    line-height: 187%;
+    margin-left: 20px;
+  }
+
+  #container-btn {
+    width: 35%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+
+  #container-btn button {
+    height: 40px;
   }
 
   #me-section {
