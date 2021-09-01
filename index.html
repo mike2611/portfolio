@@ -116,7 +116,7 @@
                 <p class="inter-font" id="info-card"></p>
                 <ul class="d-flex languages" id="languages-first">
                 </ul>
-                <button class="inter-font see-btn show-modal" id="first-btn"  type="button"> See Project </button>
+                <button class="inter-font see-btn show-modal first-btn" type="button" onclick="getModal(this.id)"> See Project </button>
             </div>
         </section>
         <section  class="d-flex-center" id="work-cards">
@@ -133,36 +133,28 @@
                     <ul class="used-languages d-flex card-languages">
                     </ul>
                 </section>
-                <button class="inter-font see-btn show-modal d-flex-center card-btn"  type="button">See Project</button>
+                <button class="inter-font see-btn show-modal d-flex-center card-btn"  type="button" onclick="getModal(this.id)">See Project</button>
             </section>
         </section>
-        <ssction class="d-none" id="modal-container">
+        <section class="d-none" id="modal-container">
             <div class="d-flex" id="modal">
                 <div class="d-flex" id="modal-top">
-                    <h2>Multi Post Stories</h2>
+                    <h2></h2>
                     <button id="close-modal">
                         <i class="material-icons">close</i>
                     </button>
                 </div>
-                <ul class="d-flex languages" id="languages-modal">
-                    <li><div class="poppins-font d-flex">css</div></li>
-                    <li><div class="poppins-font d-flex">css</div></li>
-                    <li><div class="poppins-font d-flex">css</div></li>
-                </ul>
+                <ul class="d-flex languages" id="languages-modal"></ul>
                 <div class="d-flex-center" id="modal-bottom">
-                    <img src="../images/test.png" alt="project image">
-                <p class="inter-font"> 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book.
-                </p>
+                    <img src="" alt="project image">
+                <p class="inter-font" id="description-modal"></p>
                 <div>
-                    <button class="inter-font">See Live <i class="fas fa-link"></i></button>
-                    <button class="inter-font">See Source  <i class="fab fa-github"></i></button>
+                    <button class="inter-font" id="live-btn">See Live <i class="fas fa-link"></i></button>
+                    <button class="inter-font" id="source-btn">See Source  <i class="fab fa-github"></i></button>
                 </div>   
                 </div>
             </div>
-        </ssction>
+        </section>
     </section>
 
     

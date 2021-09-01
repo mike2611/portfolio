@@ -87,11 +87,10 @@ Object.keys(projects).forEach((project) => {
   containerCards.appendChild(cardClone);
 });
 
-const modal = document.querySelectorAll('.show-modal');
+const modalBtn = document.querySelectorAll('.show-modal');
 const closeModal = document.querySelector('#close-modal');
 const arrayProjects = [];
 Object.keys(projects).forEach((project) => arrayProjects.push(project));
-console.log(arrayProjects);
 
 function popUpWindow() {
   const modalContainer = document.querySelector('#modal-container');
@@ -99,19 +98,41 @@ function popUpWindow() {
   modalContainer.classList.toggle('d-flex');
 }
 
-function showModal() {
-  popUpWindow();
-}
-
 let index = 0;
 
-modal.forEach((btn) => {
-  btn.addEventListener('click', showModal);
+modalBtn.forEach((btn) => {
   btn.setAttribute('id', index);
+  btn.addEventListener('click', popUpWindow);
   index += 1;
 });
 
 closeModal.addEventListener('click', popUpWindow);
+
+// eslint-disable-next-line no-unused-vars
+function getModal(id) {
+  id = id <= 2 ? 0 : id - 2;
+  const modal = document.querySelector('#modal');
+  const modalChilds = modal.childNodes;
+  modalChilds[1].firstElementChild.innerText = projects[arrayProjects[id]].name;
+  const technologies = modalChilds[3];
+  technologies.innerText = '';
+  (projects[arrayProjects[id]].technologies).forEach((tech) => {
+    const technology = document.createElement('li');
+    technology.innerHTML = `<div class="poppins-font d-flex">${tech}</div>`;
+    technologies.appendChild(technology);
+  });
+  modalChilds[5].firstElementChild.src = projects[arrayProjects[id]].image;
+  const modalDescription = modalChilds[5].querySelector('#description-modal');
+  modalDescription.innerText = projects[arrayProjects[id]].description;
+  const liveBtn = modalChilds[5].querySelector('#live-btn');
+  liveBtn.addEventListener('click', () => {
+    window.location.href = projects[arrayProjects[id]].live;
+  });
+  const sourceBtn = modalChilds[5].querySelector('#source-btn');
+  sourceBtn.addEventListener('click', () => {
+    window.location.href = projects[arrayProjects[id]].link;
+  });
+}
 
 const hamburgerBtn = document.querySelector('#header-menu');
 const closeBtn = document.querySelector('#header-menu-btn');
