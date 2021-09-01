@@ -419,13 +419,13 @@ a {
   background-color: #ff6b00;
   width: 120px;
   border: none;
-  height: 48px;
-  width: 150px;
+  height: 45px;
+  width: 134px;
   color: white;
   margin:0 5px 0 5px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 141%;
 }
 
@@ -606,11 +606,6 @@ footer {
     justify-content: space-around;
   }
 
-  #modal-info {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
   #menu-nav {
     display: none;
   }
@@ -811,8 +806,34 @@ footer {
     margin-left: 5%;
   }
 
-  #modal-bottom img {
+  #modal-info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #modal-info img {
     max-width: 60%;
+    margin-left: 5%;
+  }
+
+  #modal-info p {
+    font-size: 16px;
+    line-height: 187%;
+    margin-left: 20px;
+  }
+
+  #container-btn {
+    width: 35%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+  }
+
+  #container-btn button{
+    height: 40px;
   }
 
   #me-section {
