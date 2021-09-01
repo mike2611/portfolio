@@ -163,7 +163,6 @@ a {
 }
 
 #presentation-info p {
-  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 150%;
   color: white;
@@ -195,6 +194,10 @@ a {
 
 .inter-font {
   font-family: 'Inter', sans-serif;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
 }
 
 .margin-tb-zero {
@@ -259,13 +262,13 @@ a {
   color: white;
 }
 
-#languages {
+.languages {
   list-style-type: none;
-  width: 300px;
+  width: 270px;
   padding: 0;
 }
 
-#languages div {
+.languages div {
   align-items: center;
   background-color: white;
   height: 40px;
@@ -337,7 +340,7 @@ a {
 }
 
 .card-description {
-  height: 100px;
+  height: 140px;
 }
 
 #modal-container {
@@ -353,8 +356,78 @@ a {
 
 #modal {
   background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  width: 95vw;
+  height: 95vh;
+}
+
+#modal-top {
+  justify-content: space-around;
+}
+
+#close-modal {
+  border: none;
+  background: transparent;
+  color: #67798e;
+}
+
+#close-modal i {
+  color: #67798e;
+}
+
+#languages-modal {
+  margin-left: 10%;
+}
+
+#languages-modal div{
+  height: 32px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 123%;
+  color: #3c3a39;
+  align-items: center;
+}
+
+
+#modal-bottom {
+  flex-direction: column;
+  align-items: center;
+}
+
+#modal-bottom {
+  overflow: hidden;
+}
+
+#modal-bottom img {
   width: 80%;
-  height: 100vh;
+  max-width: 400px;
+}
+
+#modal-bottom p {
+  width: 95%;
+  color: #344563;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+#modal-bottom button {
+  background-color: #ff6b00;
+  width: 120px;
+  border: none;
+  height: 48px;
+  width: 150px;
+  color: white;
+  margin:0 5px 0 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 141%;
+}
+
+#modal-bottom i {
+  margin:0 0 2px 8px;
+  font-size: 20px;
 }
 
 #me-section {

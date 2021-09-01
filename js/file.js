@@ -44,8 +44,8 @@ const projects = {
   },
   cars: {
     name: 'Car Catalog',
-    description: `This project is a catalog for cars. 
-    Where cars can be added, deleted, or get their registration changed.`,
+    description: `This project is a catalog for cars. Where cars can be added,
+     deleted, or get their registration changed.`,
     image: '../images/cars.png',
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/mi-catalogo/',
@@ -62,7 +62,7 @@ firstCard.firstElementChild.src = projects.user.image;
 const firstCardChilds = firstCard.childNodes;
 firstCardChilds[3].firstElementChild.innerText = projects.user.name;
 firstCardChilds[3].querySelector('#info-card').innerText = projects.user.description;
-const firstCardTechnologies = firstCardChilds[3].querySelector('#languages');
+const firstCardTechnologies = firstCardChilds[3].querySelector('#languages-first');
 (projects.user.technologies).forEach((tech) => {
   const technology = document.createElement('li');
   technology.innerHTML = `<div class="inter-font d-flex">${tech}</div>`;
@@ -87,17 +87,28 @@ Object.keys(projects).forEach((project) => {
   containerCards.appendChild(cardClone);
 });
 
+const modal = document.querySelectorAll('.show-modal');
+const closeModal = document.querySelector('#close-modal');
+const arrayProjects = [];
+Object.keys(projects).forEach((project) => arrayProjects.push(project));
+console.log(arrayProjects);
+
 function popUpWindow() {
   const modalContainer = document.querySelector('#modal-container');
   modalContainer.classList.toggle('d-none');
   modalContainer.classList.toggle('d-flex');
 }
 
-const showModal = document.querySelectorAll('.show-modal');
-const closeModal = document.querySelector('#close-modal');
+function showModal() {
+  popUpWindow();
+}
 
-showModal.forEach((btn) => {
-  btn.addEventListener('click', popUpWindow);
+let index = 0;
+
+modal.forEach((btn) => {
+  btn.addEventListener('click', showModal);
+  btn.setAttribute('id', index);
+  index += 1;
 });
 
 closeModal.addEventListener('click', popUpWindow);

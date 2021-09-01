@@ -92,7 +92,7 @@
             <section class="d-flex" id="presentation-info">
                 <h1 class="heading-font margin-tb-zero">Hey There. <br> I’m Mike</h1>
                 <h2 class="roboto-font">I’am a Software Developer</h2>
-                <p class="margin-tb-zero">
+                <p class="margin-tb-zero poppins-font">
                     I can help you build a product , feature or website Look 
                     through some of my work and experience! If you like what 
                     you see and have a project you need coded, <br> don’t hestiate 
@@ -114,7 +114,7 @@
             <div id="info-container">
                 <h2 class="heading-font"></h2>
                 <p class="inter-font" id="info-card"></p>
-                <ul class="d-flex" id="languages">
+                <ul class="d-flex languages" id="languages-first">
                 </ul>
                 <button class="inter-font see-btn show-modal" id="first-btn"  type="button"> See Project </button>
             </div>
@@ -137,22 +137,29 @@
             </section>
         </section>
         <ssction class="d-none" id="modal-container">
-            <h2>Multi Post Stories</h2>
-            <button>
-                <i class="material-icons" id="close-modal">close</i>
-            </button>
-            <div id="modal">
-                <ul class="used-languages d-flex card-languages">
+            <div class="d-flex" id="modal">
+                <div class="d-flex" id="modal-top">
+                    <h2>Multi Post Stories</h2>
+                    <button id="close-modal">
+                        <i class="material-icons">close</i>
+                    </button>
+                </div>
+                <ul class="d-flex languages" id="languages-modal">
+                    <li><div class="poppins-font d-flex">css</div></li>
+                    <li><div class="poppins-font d-flex">css</div></li>
+                    <li><div class="poppins-font d-flex">css</div></li>
                 </ul>
-                <img src="" alt="">
-                <p>
+                <div class="d-flex-center" id="modal-bottom">
+                    <img src="../images/test.png" alt="project image">
+                <p class="inter-font"> 
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                     dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+                    book.
                 </p>
                 <div>
-                    <button>See Live</button>
-                    <button>See Source</button>
+                    <button class="inter-font">See Live <i class="fas fa-link"></i></button>
+                    <button class="inter-font">See Source  <i class="fab fa-github"></i></button>
+                </div>   
                 </div>
             </div>
         </ssction>
