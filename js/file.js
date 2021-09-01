@@ -121,7 +121,7 @@ function getModal(id) {
     technology.innerHTML = `<div class="poppins-font d-flex">${tech}</div>`;
     technologies.appendChild(technology);
   });
-  modalChilds[5].firstElementChild.src = projects[arrayProjects[id]].image;
+  modalChilds[5].firstElementChild.firstElementChild.src = projects[arrayProjects[id]].image;
   const modalDescription = modalChilds[5].querySelector('#description-modal');
   modalDescription.innerText = projects[arrayProjects[id]].description;
   const liveBtn = modalChilds[5].querySelector('#live-btn');

@@ -398,6 +398,11 @@ a {
   overflow: hidden;
 }
 
+#modal-info {
+  flex-direction: column;
+  align-items: center;
+}
+
 #modal-bottom img {
   width: 80%;
   max-width: 400px;
