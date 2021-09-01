@@ -606,6 +606,11 @@ footer {
     justify-content: space-around;
   }
 
+  #modal-info {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   #menu-nav {
     display: none;
   }
