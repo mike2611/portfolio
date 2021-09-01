@@ -347,7 +347,7 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
-  left: 0;
+  left: 0;   
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -388,7 +388,6 @@ a {
   color: #3c3a39;
   align-items: center;
 }
-
 
 #modal-bottom {
   flex-direction: column;
@@ -779,6 +778,31 @@ footer {
     background: url('../images/hoverWorkBG.svg') no-repeat;
     background-size: cover;
     cursor: pointer;
+  }
+
+  #modal {
+    height: 80vh;
+    width: 85vw;
+  }
+
+  #modal-top {
+    justify-content: space-between;
+  }
+
+  #modal-top h2 {
+    margin-left: 5%;
+  }
+
+  #close-modal {
+    margin-right: 5%;
+  }
+
+  #languages-modal {
+    margin-left: 5%;
+  }
+
+  #modal-bottom img {
+    max-width: 60%;
   }
 
   #me-section {
