@@ -156,4 +156,3 @@ closeBtn.addEventListener('click', showCloseMenu);
 menuItems.forEach((item) => {
   item.addEventListener('click', showCloseMenu);
 });
-
