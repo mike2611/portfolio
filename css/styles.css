@@ -547,6 +547,17 @@ footer {
   margin-bottom: 30px;
 }
 
+#email-input {
+  margin-bottom: 0;
+}
+
+#email-error {
+  color: tomato;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
 #area-contact {
   border: none;
   background-color: #fbf8f7;
