@@ -3,11 +3,7 @@ const projects = {
     name: 'Users Register',
     description: `This project is a table for users. 
     Where users can be added, deleted, or modified.`,
-<<<<<<< HEAD
-    image: '/../images/user.png',
-=======
     image: 'images/user.png',
->>>>>>> validate_form
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/users-register/',
     link: 'https://github.com/mike2611/users-register',
