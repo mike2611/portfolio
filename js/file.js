@@ -142,12 +142,19 @@ function showCloseMenu() {
   const menuSection = document.querySelector('#menu-nav');
   const nav = document.querySelector('#nav-menu');
   const headerName = document.querySelector('#header-name a');
+  const itemsContainer = document.querySelector('#items-container-menu');
 
   menuSection.classList.toggle('d-none');
-  menuSection.classList.toggle('d-flex');
+  menuSection.classList.toggle('d-flex-animation');
   nav.classList.toggle('d-none');
   headerName.classList.toggle('d-none');
   headerName.classList.toggle('d-flex-center');
+  setTimeout(() => {
+    itemsContainer.classList.remove('d-none');
+    itemsContainer.classList.add('d-flex');
+  }, 1100);
+  itemsContainer.classList.add('d-none');
+  itemsContainer.classList.remove('d-flex');
 }
 
 hamburgerBtn.addEventListener('click', showCloseMenu);
