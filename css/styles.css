@@ -10,9 +10,10 @@ body {
 
 #headline {
   margin: 0;
-  height: 100%;
+  height: 100vh;
   background: #1c1a19 url('../images/backImageMobile.png') right bottom no-repeat;
   background-size: 120px;
+  align-items: center;
 }
 
 .d-none {
