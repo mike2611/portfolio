@@ -5,9 +5,6 @@
 ## Desktop 💻
 ![screenshot](images/desktopVersion.png)
 
-## Mobile 📱
-![screenshot](images/portfolioImage.png)
-
 ## Live Demo
 https://mike2611.github.io/portfolio/
  
