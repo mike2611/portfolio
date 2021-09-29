@@ -8,6 +8,14 @@ const projects = {
     live: 'https://mike2611.github.io/users-register/',
     link: 'https://github.com/mike2611/users-register',
   },
+  todo: {
+    name: 'ToDo-List',
+    description: 'This project is a ToDo-List where the user can add, delete and edit tasks, tasks can be marked as completed and all completed tasks can be deleted',
+    image: 'images/todo.png',
+    technologies: ['HTML', 'CSS', 'JS'],
+    live: 'https://mike2611.github.io/todo-list-mv/',
+    link: 'https://github.com/mike2611/todo-list-mv',
+  },
   sketch: {
     name: 'Etch-a-Sketch',
     description: `This project is something between a 
@@ -75,6 +83,7 @@ Object.keys(projects).forEach((project) => {
   const cardContainer = cardClone.firstElementChild;
   const childsCardContainer = cardContainer.childNodes;
   childsCardContainer[1].firstElementChild.innerText = projects[project].name;
+  childsCardContainer[3].classList.add('d-flex-center');
   childsCardContainer[3].innerText = projects[project].description;
 
   const technologies = childsCardContainer[5];
