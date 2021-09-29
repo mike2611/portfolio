@@ -3,16 +3,24 @@ const projects = {
     name: 'Users Register',
     description: `This project is a table for users. 
     Where users can be added, deleted, or modified.`,
-    image: 'images/user.png',
+    image: 'images/projects/user.png',
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/users-register/',
     link: 'https://github.com/mike2611/users-register',
+  },
+  todo: {
+    name: 'ToDo-List',
+    description: 'This project is a ToDo-List where the user can add, delete and edit tasks, tasks can be marked as completed and all completed tasks can be deleted',
+    image: 'images/projects/todo.png',
+    technologies: ['HTML', 'CSS', 'JS'],
+    live: 'https://mike2611.github.io/todo-list-mv/',
+    link: 'https://github.com/mike2611/todo-list-mv',
   },
   sketch: {
     name: 'Etch-a-Sketch',
     description: `This project is something between a 
     sketchpad and an Etch-A-Sketch.`,
-    image: 'images/etch.png',
+    image: 'images/projects/etch.png',
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/etch-a-sketch/',
     link: 'https://github.com/mike2611/etch-a-sketch',
@@ -20,7 +28,7 @@ const projects = {
   youtube: {
     name: 'Youtube Clone',
     description: 'This project is a clone of a youtube desktop page.',
-    image: 'images/youtube.png',
+    image: 'images/projects/youtube.png',
     technologies: ['HTML', 'CSS'],
     live: 'https://mike2611.github.io/youtube-page/',
     link: 'https://github.com/mike2611/youtube-page',
@@ -29,7 +37,7 @@ const projects = {
     name: 'Rock Paper Scissors',
     description: `In this project, you play against the computer a simple 
     game of rock, paper, scissors first to five wins!`,
-    image: 'images/rps.png',
+    image: 'images/projects/rps.png',
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/rock-paper-scissor/',
     link: 'https://github.com/mike2611/rock-paper-scissor/blob/main/README.md',
@@ -37,7 +45,7 @@ const projects = {
   google: {
     name: 'Google Clone',
     description: 'This project is a clone of Google home page.',
-    image: 'images/google.png',
+    image: 'images/projects/google.png',
     technologies: ['HTML', 'CSS'],
     live: 'https://mike2611.github.io/google-homepage/',
     link: 'https://github.com/mike2611/google-homepage',
@@ -46,7 +54,7 @@ const projects = {
     name: 'Car Catalog',
     description: `This project is a catalog for cars. Where cars can be added,
      deleted, or get their registration changed.`,
-    image: 'images/cars.png',
+    image: 'images/projects/cars.png',
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/mi-catalogo/',
     link: 'https://github.com/mike2611/mi-catalogo',
@@ -75,6 +83,7 @@ Object.keys(projects).forEach((project) => {
   const cardContainer = cardClone.firstElementChild;
   const childsCardContainer = cardContainer.childNodes;
   childsCardContainer[1].firstElementChild.innerText = projects[project].name;
+  childsCardContainer[3].classList.add('d-flex-center');
   childsCardContainer[3].innerText = projects[project].description;
 
   const technologies = childsCardContainer[5];
