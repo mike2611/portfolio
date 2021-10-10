@@ -1,6 +1,6 @@
 # Portfolio
 
->  In this project, I set up a portfolio.
+>  In this project, I set up a portfolio to display some of my projects.
 
 ## Desktop 💻
 ![screenshot](images/desktopVersion.png)
