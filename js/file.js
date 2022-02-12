@@ -59,6 +59,15 @@ const projects = {
     live: 'https://mike2611.github.io/mi-catalogo/',
     link: 'https://github.com/mike2611/mi-catalogo',
   },
+  stocks: {
+    name: 'Stocks',
+    description: `A React-Redux stock metrics application. 
+    Get the best-performing stocks daily.`,
+    image: 'images/projects/stocks.png',
+    technologies: ['React', 'Redux'],
+    live: 'https://stock-metrics-miki.herokuapp.com/',
+    link: 'https://github.com/mike2611/metrics-webapp',
+  },
 };
 
 const containerCards = document.querySelector('#work-cards');
