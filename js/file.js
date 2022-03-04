@@ -18,6 +18,25 @@ const projects = {
     live: 'https://stock-metrics-miki.herokuapp.com/',
     link: 'https://github.com/mike2611/metrics-webapp',
   },
+  lodging: {
+    name: 'Lodging',
+    description: `An app to reserve a room in a hotel in an easy way, 
+    created using RoR and React.`,
+    image: 'images/projects/lodging.png',
+    technologies: ['React', 'RoR', 'Redux'],
+    live: 'https://goofy-panini-7f9108.netlify.app/',
+    link: 'https://github.com/mike2611/lodging-app-frontend',
+  },
+  leaderboard: {
+    name: 'Go Leaderboard',
+    description: `This project displays Go board game punctuations from different players. 
+    Add your own punctation, the data is obtained and 
+    preserved thanks to the Leaderboard API service.`,
+    image: 'images/projects/leaderboard.png',
+    technologies: ['JS', 'Webpack'],
+    live: 'https://mike2611.github.io/leaderboard/',
+    link: 'https://github.com/mike2611/leaderboard',
+  },
   user: {
     name: 'Users Register',
     description: `This project is a table for users. 
