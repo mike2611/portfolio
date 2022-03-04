@@ -23,9 +23,27 @@ const projects = {
     description: `An app to reserve a room in a hotel in an easy way, 
     created using RoR and React.`,
     image: 'images/projects/lodging.png',
-    technologies: ['React', 'RoR', 'Redux'],
+    technologies: ['ReactJs', 'RoR'],
     live: 'https://goofy-panini-7f9108.netlify.app/',
     link: 'https://github.com/mike2611/lodging-app-frontend',
+  },
+  recipe: {
+    name: 'Recipe App',
+    description: `In this project we have build a 
+    Recipe App usign Ruby on Rails, .Tested with Capybara.`,
+    image: 'images/projects/recipe.png',
+    technologies: ['RoR', 'Devise'],
+    live: 'https://shielded-inlet-71783.herokuapp.com/food',
+    link: 'https://github.com/mike2611/recipe-app-rails',
+  },
+  budget: {
+    name: 'Budget App',
+    description: `In this project, I built a web app design for mobile,
+     Budget App using Ruby on Rails.tested with Capybara.`,
+    image: 'images/projects/budget.png',
+    technologies: ['RoR', 'Devise'],
+    live: 'https://shrouded-atoll-68662.herokuapp.com/',
+    link: 'https://github.com/mike2611/rails-budget-app',
   },
   leaderboard: {
     name: 'Go Leaderboard',
