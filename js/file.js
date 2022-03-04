@@ -8,6 +8,15 @@ const projects = {
     live: 'https://mike2611.github.io/users-register/',
     link: 'https://github.com/mike2611/users-register',
   },
+  stocks: {
+    name: 'Stocks',
+    description: `A React-Redux stock metrics application. 
+    Get the best-performing stocks daily.`,
+    image: 'images/projects/stocks.png',
+    technologies: ['React', 'Redux'],
+    live: 'https://stock-metrics-miki.herokuapp.com/',
+    link: 'https://github.com/mike2611/metrics-webapp',
+  },
   todo: {
     name: 'ToDo-List',
     description: 'This project is a ToDo-List where the user can add, delete and edit tasks, tasks can be marked as completed and all completed tasks can be deleted',
@@ -25,14 +34,6 @@ const projects = {
     live: 'https://mike2611.github.io/etch-a-sketch/',
     link: 'https://github.com/mike2611/etch-a-sketch',
   },
-  youtube: {
-    name: 'Youtube Clone',
-    description: 'This project is a clone of a youtube desktop page.',
-    image: 'images/projects/youtube.png',
-    technologies: ['HTML', 'CSS'],
-    live: 'https://mike2611.github.io/youtube-page/',
-    link: 'https://github.com/mike2611/youtube-page',
-  },
   rps: {
     name: 'Rock Paper Scissors',
     description: `In this project, you play against the computer a simple 
@@ -42,14 +43,6 @@ const projects = {
     live: 'https://mike2611.github.io/rock-paper-scissor/',
     link: 'https://github.com/mike2611/rock-paper-scissor/blob/main/README.md',
   },
-  google: {
-    name: 'Google Clone',
-    description: 'This project is a clone of Google home page.',
-    image: 'images/projects/google.png',
-    technologies: ['HTML', 'CSS'],
-    live: 'https://mike2611.github.io/google-homepage/',
-    link: 'https://github.com/mike2611/google-homepage',
-  },
   cars: {
     name: 'Car Catalog',
     description: `This project is a catalog for cars. Where cars can be added,
@@ -58,15 +51,6 @@ const projects = {
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/mi-catalogo/',
     link: 'https://github.com/mike2611/mi-catalogo',
-  },
-  stocks: {
-    name: 'Stocks',
-    description: `A React-Redux stock metrics application. 
-    Get the best-performing stocks daily.`,
-    image: 'images/projects/stocks.png',
-    technologies: ['React', 'Redux'],
-    live: 'https://stock-metrics-miki.herokuapp.com/',
-    link: 'https://github.com/mike2611/metrics-webapp',
   },
 };
 
