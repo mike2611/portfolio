@@ -1,4 +1,60 @@
 const projects = {
+  albumist: {
+    name: 'Albumist',
+    description: `This is a webapp that gets information using the Spotify API
+     and also saves some information about users using the Involvement API,
+    the objective of the app is retrieving the albums where a top song from spotify is in.`,
+    image: 'images/projects/albumist.png',
+    technologies: ['JS', 'Webpack'],
+    live: 'https://katiscoding.github.io/JSCapstone/dist/',
+    link: 'https://github.com/mike2611/JSCapstone',
+  },
+  stocks: {
+    name: 'Stocks',
+    description: `A React-Redux stock metrics application. 
+    Get the best-performing stocks daily.`,
+    image: 'images/projects/stocks.png',
+    technologies: ['React', 'Redux'],
+    live: 'https://stock-metrics-miki.herokuapp.com/',
+    link: 'https://github.com/mike2611/metrics-webapp',
+  },
+  lodging: {
+    name: 'Lodging',
+    description: `An app to reserve a room in a hotel in an easy way, 
+    created using RoR and React.`,
+    image: 'images/projects/lodging.png',
+    technologies: ['ReactJs', 'RoR'],
+    live: 'https://goofy-panini-7f9108.netlify.app/',
+    link: 'https://github.com/mike2611/lodging-app-frontend',
+  },
+  recipe: {
+    name: 'Recipe App',
+    description: `In this project we have build a 
+    Recipe App usign Ruby on Rails, .Tested with Capybara.`,
+    image: 'images/projects/recipe.png',
+    technologies: ['RoR', 'Devise'],
+    live: 'https://shielded-inlet-71783.herokuapp.com/food',
+    link: 'https://github.com/mike2611/recipe-app-rails',
+  },
+  budget: {
+    name: 'Budget App',
+    description: `In this project, I built a web app design for mobile,
+     Budget App using Ruby on Rails.tested with Capybara.`,
+    image: 'images/projects/budget.png',
+    technologies: ['RoR', 'Devise'],
+    live: 'https://shrouded-atoll-68662.herokuapp.com/',
+    link: 'https://github.com/mike2611/rails-budget-app',
+  },
+  leaderboard: {
+    name: 'Go Leaderboard',
+    description: `This project displays Go board game punctuations from different players. 
+    Add your own punctation, the data is obtained and 
+    preserved thanks to the Leaderboard API service.`,
+    image: 'images/projects/leaderboard.png',
+    technologies: ['JS', 'Webpack'],
+    live: 'https://mike2611.github.io/leaderboard/',
+    link: 'https://github.com/mike2611/leaderboard',
+  },
   user: {
     name: 'Users Register',
     description: `This project is a table for users. 
@@ -7,6 +63,15 @@ const projects = {
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/users-register/',
     link: 'https://github.com/mike2611/users-register',
+  },
+  books: {
+    name: 'Awesome books',
+    description: `In this project, you can add and delete your favorite books,
+     these are persisted thanks to your local storage.`,
+    image: 'images/projects/books.png',
+    technologies: ['JS', 'Bootstrap'],
+    live: 'https://mike2611.github.io/awesome-books/#',
+    link: 'https://github.com/mike2611/awesome-books',
   },
   todo: {
     name: 'ToDo-List',
@@ -25,14 +90,6 @@ const projects = {
     live: 'https://mike2611.github.io/etch-a-sketch/',
     link: 'https://github.com/mike2611/etch-a-sketch',
   },
-  youtube: {
-    name: 'Youtube Clone',
-    description: 'This project is a clone of a youtube desktop page.',
-    image: 'images/projects/youtube.png',
-    technologies: ['HTML', 'CSS'],
-    live: 'https://mike2611.github.io/youtube-page/',
-    link: 'https://github.com/mike2611/youtube-page',
-  },
   rps: {
     name: 'Rock Paper Scissors',
     description: `In this project, you play against the computer a simple 
@@ -41,14 +98,6 @@ const projects = {
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/rock-paper-scissor/',
     link: 'https://github.com/mike2611/rock-paper-scissor/blob/main/README.md',
-  },
-  google: {
-    name: 'Google Clone',
-    description: 'This project is a clone of Google home page.',
-    image: 'images/projects/google.png',
-    technologies: ['HTML', 'CSS'],
-    live: 'https://mike2611.github.io/google-homepage/',
-    link: 'https://github.com/mike2611/google-homepage',
   },
   cars: {
     name: 'Car Catalog',
@@ -59,15 +108,6 @@ const projects = {
     live: 'https://mike2611.github.io/mi-catalogo/',
     link: 'https://github.com/mike2611/mi-catalogo',
   },
-  stocks: {
-    name: 'Stocks',
-    description: `A React-Redux stock metrics application. 
-    Get the best-performing stocks daily.`,
-    image: 'images/projects/stocks.png',
-    technologies: ['React', 'Redux'],
-    live: 'https://stock-metrics-miki.herokuapp.com/',
-    link: 'https://github.com/mike2611/metrics-webapp',
-  },
 };
 
 const containerCards = document.querySelector('#work-cards');
@@ -75,12 +115,12 @@ const cards = document.querySelectorAll('.work-card');
 const card = cards[0];
 
 const firstCard = document.querySelector('#first-card');
-firstCard.firstElementChild.src = projects.user.image;
+firstCard.firstElementChild.src = projects.albumist.image;
 const firstCardChilds = firstCard.childNodes;
-firstCardChilds[3].firstElementChild.innerText = projects.user.name;
-firstCardChilds[3].querySelector('#info-card').innerText = projects.user.description;
+firstCardChilds[3].firstElementChild.innerText = projects.albumist.name;
+firstCardChilds[3].querySelector('#info-card').innerText = 'Take a look at this web app it has great design and UX, the objective of the app is retrieving the albums where a top song from spotify is in.';
 const firstCardTechnologies = firstCardChilds[3].querySelector('#languages-first');
-(projects.user.technologies).forEach((tech) => {
+(projects.albumist.technologies).forEach((tech) => {
   const technology = document.createElement('li');
   technology.innerHTML = `<div class="inter-font d-flex">${tech}</div>`;
   firstCardTechnologies.appendChild(technology);

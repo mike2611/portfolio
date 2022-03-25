@@ -333,6 +333,17 @@ a {
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
+.get-resume {
+  width: 7rem;
+  padding: 1rem;
+  background-color: #ff6800;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
 .see-btn:hover {
   background-color: #fff5e1;
   color: #f55800;
