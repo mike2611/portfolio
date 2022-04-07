@@ -101,17 +101,17 @@ const containerCards = document.querySelector('#work-cards');
 const cards = document.querySelectorAll('.work-card');
 const card = cards[0];
 
-const firstCard = document.querySelector('#first-card');
-firstCard.firstElementChild.src = projects.albumist.image;
-const firstCardChilds = firstCard.childNodes;
-firstCardChilds[3].firstElementChild.innerText = projects.albumist.name;
-firstCardChilds[3].querySelector('#info-card').innerText = 'The objective of the app is retrieving the albums where a top song from spotify is in.';
-const firstCardTechnologies = firstCardChilds[3].querySelector('#languages-first');
-(projects.albumist.technologies).forEach((tech) => {
-  const technology = document.createElement('li');
-  technology.innerHTML = `<div class="inter-font d-flex">${tech}</div>`;
-  firstCardTechnologies.appendChild(technology);
-});
+// const firstCard = document.querySelector('#first-card');
+// firstCard.firstElementChild.src = projects.albumist.image;
+// const firstCardChilds = firstCard.childNodes;
+// firstCardChilds[3].firstElementChild.innerText = projects.albumist.name;
+// firstCardChilds[3].querySelector('#info-card').innerText = 'The objective of the app is retrieving the albums where a top song from spotify is in.';
+// const firstCardTechnologies = firstCardChilds[3].querySelector('#languages-first');
+// (projects.albumist.technologies).forEach((tech) => {
+//   const technology = document.createElement('li');
+//   technology.innerHTML = `<div class="inter-font d-flex">${tech}</div>`;
+//   firstCardTechnologies.appendChild(technology);
+// });
 
 Object.keys(projects).forEach((project) => {
   const cardClone = card.cloneNode(true);
