@@ -172,9 +172,6 @@ a {
   letter-spacing: 0.37px;
   color: tomato;
   margin-top: 20%;
-  text-shadow:
-    0 0 7px #fff,
-    0 0 92px #ff6347;
 }
 
 #presentation-info h2 {
@@ -486,7 +483,6 @@ a {
 
 #me-section {
   background-color: #1c1a19;
-  margin-top: 150px;
 }
 
 #about-me {
@@ -840,7 +836,6 @@ footer {
   }
 
   .work-card:hover {
-    background: url('../images/hoverWorkBG.svg') no-repeat;
     background-size: cover;
     cursor: pointer;
   }
