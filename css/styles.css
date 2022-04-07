@@ -137,10 +137,21 @@ a {
   padding: 0;
 }
 
+.text-white {
+  color: white;
+}
+
+.text-blue {
+  color: #172b4d;
+}
+
 .work-card {
   background-color: transparent;
   background-size: cover;
+  border: 1px solid gray;
+  border-radius: 10px;
   margin: 10px;
+  margin-bottom: 20px;
   width: 80%;
 }
 
@@ -406,7 +417,7 @@ a {
 }
 
 #modal {
-  background-color: white;
+  background-color: rgb(249, 247, 247);
   flex-direction: column;
   justify-content: center;
   width: 95vw;
@@ -745,11 +756,6 @@ footer {
     align-items: center;
   }
 
-  .work-card:hover>.card-container>header,
-  .work-card:hover>.card-container>.inter-font {
-    opacity: 0%;
-  }
-
   #work-section header {
     border: none;
     justify-content: flex-start;
@@ -807,6 +813,7 @@ footer {
   }
 
   #work-cards {
+    margin-top: 4rem;
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
@@ -841,8 +848,8 @@ footer {
   }
 
   #modal {
-    height: 80vh;
-    width: 85vw;
+    height: 70vh;
+    width: 55vw;
   }
 
   #modal-top {
