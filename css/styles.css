@@ -30,8 +30,11 @@ body {
 #headline {
   margin: 0;
   height: 100vh;
-  background: #1c1a19 url('../images/backImageMobile.png') right bottom no-repeat;
-  background-size: 120px;
+  background: #1c1a19 url('../images/backLaptopF.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   align-items: center;
 }
 
@@ -201,8 +204,9 @@ a {
 }
 
 #presentation-info h1 {
-  font-size: 56px;
+  font-size: 65px;
   font-weight: normal;
+  text-shadow: 0 0 2px #172b4d;
   line-height: 114%;
   letter-spacing: 0.37px;
   color: #ae976b;
@@ -210,14 +214,18 @@ a {
 }
 
 #presentation-info h2 {
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: bolder;
+  font-size: 25px;
   line-height: 133%;
   color: #fff5e1;
 }
 
 #presentation-info p {
-  font-size: 16px;
+  background-color: #1c1a19;
+  border-radius: 10px;
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 150%;
   color: white;
   width: 80%;
@@ -755,8 +763,11 @@ footer {
   }
 
   #headline {
-    background: #1c1a19 url('../images/backLaptop.jpg') no-repeat;
-    background-size: 50%;
+    background: #1c1a19 url('../images/backLaptopF.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #principal-container {
@@ -1043,7 +1054,7 @@ footer {
 
 @media screen and (min-width: 1000px) {
   #headline {
-    background: #1c1a19 url('../images/backLaptop.jpg') no-repeat center center fixed;
+    background: #1c1a19 url('../images/backLaptopE.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
