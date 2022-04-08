@@ -7,7 +7,7 @@ body {
 
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  background-size: 400% 1600%;
   animation: gradient 15s ease infinite;
   margin: 0;
   padding: 0;
@@ -165,7 +165,8 @@ a {
 }
 
 .work-card {
-  background-color: transparent;
+  background-color: #1c1a19;
+  opacity: 0.8;
   background-size: cover;
   border: 1px solid gray;
   border-radius: 10px;
@@ -698,10 +699,6 @@ footer {
     justify-content: space-around;
   }
 
-  #first-card {
-    display: flex;
-  }
-
   #menu-nav {
     display: none;
   }
@@ -727,8 +724,8 @@ footer {
     width: 18rem;
   }
 
-  #principal-header>#header-name,
-  #principal-header>#items-container {
+  #principal-header > #header-name,
+  #principal-header > #items-container {
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -805,6 +802,7 @@ footer {
   }
 
   #first-card {
+    display: flex;
     flex-direction: row;
     width: 80%;
   }
@@ -861,11 +859,11 @@ footer {
     transition: background 1s ease-in-out;
   }
 
-  .work-card:hover>.card-container>.used-languages {
+  .work-card:hover > .card-container > .used-languages {
     display: none;
   }
 
-  .work-card:hover>.see-btn {
+  .work-card:hover > .see-btn {
     display: flex;
     margin-top: 26px;
   }
