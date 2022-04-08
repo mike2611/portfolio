@@ -544,7 +544,12 @@ a {
 }
 
 #about-me {
-  background: #1c1a19 url('../images/meImage.png') right bottom no-repeat;
+  background: #1c1a19 url('../images/photo5.png') no-repeat;
+  background-position: 90% 90%;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
   height: 40rem;
   margin-bottom: 20%;
 }
@@ -956,8 +961,8 @@ footer {
   }
 
   #me-section {
-    background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
-    background-size: 42%;
+    background: #1c1a19 url('../images/photo5.png') 90% 200px no-repeat;
+    background-size: 30%;
     margin-bottom: 40px;
   }
 
@@ -981,9 +986,7 @@ footer {
   }
 
   #me-section hr {
-    display: block;
-    width: 80%;
-    border: 2px solid gray;
+    display: none;
   }
 
   #me-list {
@@ -1066,8 +1069,14 @@ footer {
   }
 
   #me-section {
-    background: #1c1a19 url('../images/desktopMeImage.svg') right 20% no-repeat;
-    background-size: 40%;
+    background: #1c1a19 url('../images/photo5.png') 90% 19% no-repeat;
+    background-size: 30%;
+  }
+
+  #me-section hr {
+    display: block;
+    width: 80%;
+    border: 2px solid gray;
   }
 
   #card-image {
