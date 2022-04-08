@@ -167,8 +167,6 @@ function getModal(id) {
     technologies.appendChild(technology);
   });
   modalChilds[5].firstElementChild.firstElementChild.src = projects[arrayProjects[id]].image;
-  const modalDescription = modalChilds[5].querySelector('#description-modal');
-  modalDescription.innerText = projects[arrayProjects[id]].description;
   const liveBtn = modalChilds[5].querySelector('#live-btn');
   liveBtn.addEventListener('click', () => {
     window.location.href = projects[arrayProjects[id]].live;
