@@ -160,6 +160,10 @@ a {
   color: white;
 }
 
+.text-gold {
+  color: #ae976b;
+}
+
 .text-blue {
   color: #172b4d;
 }
@@ -179,7 +183,7 @@ a {
   font-weight: normal;
   font-size: 32px;
   line-height: 137%;
-  color: tomato;
+  color: #ae976b;
   margin-bottom: 10px;
 }
 
@@ -201,7 +205,7 @@ a {
   font-weight: normal;
   line-height: 114%;
   letter-spacing: 0.37px;
-  color: tomato;
+  color: #ae976b;
   margin-top: 20%;
 }
 
@@ -356,39 +360,48 @@ a {
   padding: 0 10px;
   font-size: 15px;
   line-height: 133%;
-  color: tomato;
+  color: #ae976b;
   font-weight: bolder;
   margin-right: 20px;
 }
 
 .see-btn {
-  background-color: tomato;
+  background-color: #172b4d;
   color: white;
   font-weight: bold;
   border: none;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.touch-btn {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  border: 1px white solid;
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .get-resume {
-  width: 7rem;
+  width: 9rem;
   padding: 1rem;
-  background-color: tomato;
-  color: white;
+  background-color: #172b4d;
+  color: #ae976b;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
+  border-radius: 20px;
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .see-btn:hover {
-  background-color: #fff5e1;
-  color: tomato;
-  border: 1px solid tomato;
+  background-color: #172b4d;
+  color: #ae976b;
+  border: 1px solid #ae976b;
   cursor: pointer;
 }
 
 .see-btn:active {
-  background-color: tomato;
+  background-color: #ae976b;
   color: white;
   border: none;
 }
@@ -399,8 +412,9 @@ a {
 }
 
 .first-btn {
-  width: 124px;
+  width: 140px;
   height: 40px;
+  border-radius: 20px;
 }
 
 #work-cards {
@@ -500,7 +514,7 @@ a {
 }
 
 #modal-bottom button {
-  background-color: tomato;
+  background-color: #ae976b;
   border: none;
   height: 45px;
   width: 134px;
@@ -542,7 +556,7 @@ a {
   font-weight: normal;
   font-size: 72px;
   line-height: 122%;
-  color: tomato;
+  color: #ae976b;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -570,7 +584,7 @@ a {
   font-weight: bold;
   font-size: 32px;
   line-height: 134%;
-  color: tomato;
+  color: #ae976b;
   list-style-type: none;
 }
 
@@ -614,7 +628,7 @@ footer {
   align-self: center;
   width: 85%;
   text-align: center;
-  color: #172b4d;
+  color: white;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -641,7 +655,7 @@ footer {
 }
 
 #email-error {
-  color: tomato;
+  color: #ae976b;
   font-size: 15px;
   font-weight: bolder;
   margin-bottom: 30px;
@@ -650,7 +664,7 @@ footer {
 #area-contact {
   border: none;
   background-color: #fbf8f7;
-  height: 114px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
@@ -682,7 +696,7 @@ footer {
 }
 
 .footer-logos {
-  color: #172b4d;
+  color: white;
   font-size: 20px;
 }
 
@@ -724,8 +738,8 @@ footer {
     width: 18rem;
   }
 
-  #principal-header > #header-name,
-  #principal-header > #items-container {
+  #principal-header>#header-name,
+  #principal-header>#items-container {
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -741,7 +755,7 @@ footer {
   }
 
   #headline {
-    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
+    background: #1c1a19 url('../images/backLaptop.jpg') no-repeat;
     background-size: 50%;
   }
 
@@ -859,11 +873,11 @@ footer {
     transition: background 1s ease-in-out;
   }
 
-  .work-card:hover > .card-container > .used-languages {
+  .work-card:hover>.card-container>.used-languages {
     display: none;
   }
 
-  .work-card:hover > .see-btn {
+  .work-card:hover>.see-btn {
     display: flex;
     margin-top: 26px;
   }
@@ -1029,8 +1043,11 @@ footer {
 
 @media screen and (min-width: 1000px) {
   #headline {
-    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
-    background-size: contain;
+    background: #1c1a19 url('../images/backLaptop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #presentation-info p {
