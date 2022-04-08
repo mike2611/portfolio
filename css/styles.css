@@ -151,7 +151,7 @@ a {
   border: 1px solid gray;
   border-radius: 10px;
   margin: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   width: 80%;
 }
 
@@ -281,6 +281,7 @@ a {
 }
 
 #first-card {
+  display: none;
   flex-direction: column;
   margin-left: 10px;
 }
@@ -308,6 +309,10 @@ a {
 
 .card-languages {
   margin-top: 0;
+}
+
+.first-languages {
+  margin-top: 1rem !important;
 }
 
 .card-languages div {
@@ -672,6 +677,10 @@ footer {
 @media screen and (min-width: 600px) {
   #principal-header {
     justify-content: space-around;
+  }
+
+  #first-card {
+    display: flex;
   }
 
   #menu-nav {
