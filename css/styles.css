@@ -1,18 +1,40 @@
-html {
+html,
+body {
+  width: 100%;
   height: 100%;
   scroll-behavior: smooth;
 }
 
 body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 1600%;
+  animation: gradient 10s ease infinite;
   margin: 0;
   padding: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 #headline {
   margin: 0;
   height: 100vh;
-  background: #1c1a19 url('../images/backImageMobile.png') right bottom no-repeat;
-  background-size: 120px;
+  background: #1c1a19 url('../images/backLaptopF.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   align-items: center;
 }
 
@@ -137,10 +159,26 @@ a {
   padding: 0;
 }
 
+.text-white {
+  color: white;
+}
+
+.text-gold {
+  color: #ae976b;
+}
+
+.text-blue {
+  color: #172b4d;
+}
+
 .work-card {
-  background: url('../images/workBG.svg') no-repeat;
+  background-color: #1c1a19;
+  opacity: 0.8;
   background-size: cover;
+  border: 1px solid gray;
+  border-radius: 10px;
   margin: 10px;
+  margin-bottom: 35px;
   width: 80%;
 }
 
@@ -148,7 +186,7 @@ a {
   font-weight: normal;
   font-size: 32px;
   line-height: 137%;
-  color: white;
+  color: #ae976b;
   margin-bottom: 10px;
 }
 
@@ -166,23 +204,28 @@ a {
 }
 
 #presentation-info h1 {
-  font-size: 56px;
+  font-size: 65px;
   font-weight: normal;
+  text-shadow: 0 0 2px #172b4d;
   line-height: 114%;
   letter-spacing: 0.37px;
-  color: #f55800;
+  color: #ae976b;
   margin-top: 20%;
 }
 
 #presentation-info h2 {
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: bolder;
+  font-size: 25px;
   line-height: 133%;
   color: #fff5e1;
 }
 
 #presentation-info p {
-  font-size: 16px;
+  background-color: #1c1a19;
+  border-radius: 10px;
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 150%;
   color: white;
   width: 80%;
@@ -250,7 +293,7 @@ a {
 }
 
 #work-section {
-  margin-top: 20%;
+  background-color: #1c1a19;
 }
 
 #work-section header {
@@ -270,6 +313,7 @@ a {
 }
 
 #first-card {
+  display: none;
   flex-direction: column;
   margin-left: 10px;
 }
@@ -299,6 +343,10 @@ a {
   margin-top: 0;
 }
 
+.first-languages {
+  margin-top: 1rem !important;
+}
+
 .card-languages div {
   background-color: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
@@ -320,39 +368,48 @@ a {
   padding: 0 10px;
   font-size: 15px;
   line-height: 133%;
-  color: #ff6800;
+  color: #ae976b;
   font-weight: bolder;
   margin-right: 20px;
 }
 
 .see-btn {
-  background-color: #ff6800;
+  background-color: #172b4d;
   color: white;
   font-weight: bold;
   border: none;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.touch-btn {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  border: 1px white solid;
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .get-resume {
-  width: 7rem;
+  width: 9rem;
   padding: 1rem;
-  background-color: #ff6800;
-  color: white;
+  background-color: #172b4d;
+  color: #ae976b;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   border: none;
+  border-radius: 20px;
   transition: background-color 1s ease-in-out, color 1s ease-in-out;
 }
 
 .see-btn:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+  background-color: #172b4d;
+  color: #ae976b;
+  border: 1px solid #ae976b;
   cursor: pointer;
 }
 
 .see-btn:active {
-  background-color: #e05304;
+  background-color: #ae976b;
   color: white;
   border: none;
 }
@@ -363,8 +420,9 @@ a {
 }
 
 .first-btn {
-  width: 124px;
+  width: 140px;
   height: 40px;
+  border-radius: 20px;
 }
 
 #work-cards {
@@ -395,7 +453,7 @@ a {
 }
 
 #modal-container {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   left: 0;
@@ -406,7 +464,8 @@ a {
 }
 
 #modal {
-  background-color: white;
+  background-color: rgb(234, 231, 231);
+  border-radius: 5px;
   flex-direction: column;
   justify-content: center;
   width: 95vw;
@@ -432,11 +491,11 @@ a {
 }
 
 #languages-modal div {
-  height: 32px;
+  border-radius: 10px;
   font-weight: 600;
   font-size: 13px;
-  line-height: 123%;
-  color: #3c3a39;
+  color: #172b4d;
+  background-color: rgb(234, 231, 231);
   align-items: center;
 }
 
@@ -464,7 +523,7 @@ a {
 }
 
 #modal-bottom button {
-  background-color: #ff6b00;
+  background-color: #ae976b;
   border: none;
   height: 45px;
   width: 134px;
@@ -483,11 +542,15 @@ a {
 
 #me-section {
   background-color: #1c1a19;
-  margin-top: 150px;
 }
 
 #about-me {
-  background: #1c1a19 url('../images/meImage.png') right bottom no-repeat;
+  background: #1c1a19 url('../images/photo5.png') no-repeat;
+  background-position: 90% 90%;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
   height: 40rem;
   margin-bottom: 20%;
 }
@@ -507,7 +570,7 @@ a {
   font-weight: normal;
   font-size: 72px;
   line-height: 122%;
-  color: #ff6b00;
+  color: #ae976b;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -535,7 +598,7 @@ a {
   font-weight: bold;
   font-size: 32px;
   line-height: 134%;
-  color: #ff6b00;
+  color: #ae976b;
   list-style-type: none;
 }
 
@@ -579,7 +642,7 @@ footer {
   align-self: center;
   width: 85%;
   text-align: center;
-  color: #172b4d;
+  color: white;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -606,7 +669,7 @@ footer {
 }
 
 #email-error {
-  color: tomato;
+  color: #ae976b;
   font-size: 15px;
   font-weight: bolder;
   margin-bottom: 30px;
@@ -615,7 +678,7 @@ footer {
 #area-contact {
   border: none;
   background-color: #fbf8f7;
-  height: 114px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
@@ -647,7 +710,7 @@ footer {
 }
 
 .footer-logos {
-  color: #172b4d;
+  color: white;
   font-size: 20px;
 }
 
@@ -706,8 +769,11 @@ footer {
   }
 
   #headline {
-    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
-    background-size: 50%;
+    background: #1c1a19 url('../images/backLaptopF.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #principal-container {
@@ -741,15 +807,9 @@ footer {
   }
 
   #work-section {
-    margin-top: 50px;
     flex-direction: column;
     display: flex;
     align-items: center;
-  }
-
-  .work-card:hover > .card-container > header,
-  .work-card:hover > .card-container > .inter-font {
-    opacity: 0%;
   }
 
   #work-section header {
@@ -773,6 +833,7 @@ footer {
   }
 
   #first-card {
+    display: flex;
     flex-direction: row;
     width: 80%;
   }
@@ -809,6 +870,7 @@ footer {
   }
 
   #work-cards {
+    margin-top: 4rem;
     flex-direction: row;
     flex-wrap: wrap;
     width: 80%;
@@ -838,14 +900,13 @@ footer {
   }
 
   .work-card:hover {
-    background: url('../images/hoverWorkBG.svg') no-repeat;
     background-size: cover;
     cursor: pointer;
   }
 
   #modal {
-    height: 80vh;
-    width: 85vw;
+    height: 75vh;
+    width: 50vw;
   }
 
   #modal-top {
@@ -875,8 +936,7 @@ footer {
   }
 
   #modal-info img {
-    max-width: 60%;
-    margin-left: 5%;
+    max-width: 70%;
   }
 
   #modal-info p {
@@ -885,13 +945,20 @@ footer {
     margin-left: 20px;
   }
 
+  #modal button {
+    margin: 1rem;
+  }
+
+  .img-container {
+    border: 1px solid rgb(151, 148, 148);
+  }
+
   #container-btn {
-    width: 35%;
+    width: 100%;
     margin-bottom: 5%;
     margin-top: 2%;
-    align-self: flex-end;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   #container-btn button {
@@ -899,8 +966,8 @@ footer {
   }
 
   #me-section {
-    background: #1c1a19 url('../images/desktopMeImage.svg') right 200px no-repeat;
-    background-size: 42%;
+    background: #1c1a19 url('../images/photo5.png') 90% 200px no-repeat;
+    background-size: 30%;
     margin-bottom: 40px;
   }
 
@@ -924,9 +991,7 @@ footer {
   }
 
   #me-section hr {
-    display: block;
-    width: 80%;
-    border: 2px solid gray;
+    display: none;
   }
 
   #me-list {
@@ -997,8 +1062,11 @@ footer {
 
 @media screen and (min-width: 1000px) {
   #headline {
-    background: #1c1a19 url('../images/backImage.png') right bottom no-repeat;
-    background-size: contain;
+    background: #1c1a19 url('../images/backLaptopE.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   #presentation-info p {
@@ -1006,8 +1074,14 @@ footer {
   }
 
   #me-section {
-    background: #1c1a19 url('../images/desktopMeImage.svg') right 20% no-repeat;
-    background-size: 40%;
+    background: #1c1a19 url('../images/photo5.png') 90% 19% no-repeat;
+    background-size: 30%;
+  }
+
+  #me-section hr {
+    display: block;
+    width: 80%;
+    border: 2px solid gray;
   }
 
   #card-image {

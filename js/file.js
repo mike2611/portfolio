@@ -1,9 +1,7 @@
 const projects = {
   albumist: {
     name: 'Albumist',
-    description: `This is a webapp that gets information using the Spotify API
-     and also saves some information about users using the Involvement API,
-    the objective of the app is retrieving the albums where a top song from spotify is in.`,
+    description: 'This is a webapp that gets information using the Spotify API and also saves some information about users using the Involvement API.',
     image: 'images/projects/albumist.png',
     technologies: ['JS', 'Webpack'],
     live: 'https://katiscoding.github.io/JSCapstone/dist/',
@@ -11,8 +9,7 @@ const projects = {
   },
   stocks: {
     name: 'Stocks',
-    description: `A React-Redux stock metrics application. 
-    Get the best-performing stocks daily.`,
+    description: 'A React-Redux stock metrics application. Get the best-performing stocks daily.',
     image: 'images/projects/stocks.png',
     technologies: ['React', 'Redux'],
     live: 'https://stock-metrics-miki.herokuapp.com/',
@@ -20,8 +17,7 @@ const projects = {
   },
   lodging: {
     name: 'Lodging',
-    description: `An app to reserve a room in a hotel in an easy way, 
-    created using RoR and React.`,
+    description: 'An app to reserve a room in a hotel in an easy way, created using RoR and React.',
     image: 'images/projects/lodging.png',
     technologies: ['ReactJs', 'RoR'],
     live: 'https://goofy-panini-7f9108.netlify.app/',
@@ -29,8 +25,7 @@ const projects = {
   },
   recipe: {
     name: 'Recipe App',
-    description: `In this project we have build a 
-    Recipe App usign Ruby on Rails, .Tested with Capybara.`,
+    description: 'In this project we have build a Recipe App usign Ruby on Rails, .Tested with Capybara.',
     image: 'images/projects/recipe.png',
     technologies: ['RoR', 'Devise'],
     live: 'https://shielded-inlet-71783.herokuapp.com/food',
@@ -38,8 +33,7 @@ const projects = {
   },
   budget: {
     name: 'Budget App',
-    description: `In this project, I built a web app design for mobile,
-     Budget App using Ruby on Rails.tested with Capybara.`,
+    description: 'In this project, I built a web app design for mobile, Budget App using Ruby on Rails.tested with Capybara.',
     image: 'images/projects/budget.png',
     technologies: ['RoR', 'Devise'],
     live: 'https://shrouded-atoll-68662.herokuapp.com/',
@@ -47,9 +41,7 @@ const projects = {
   },
   leaderboard: {
     name: 'Go Leaderboard',
-    description: `This project displays Go board game punctuations from different players. 
-    Add your own punctation, the data is obtained and 
-    preserved thanks to the Leaderboard API service.`,
+    description: 'This project displays Go board game punctuations the data is obtained and preserved thanks to the Leaderboard API service.',
     image: 'images/projects/leaderboard.png',
     technologies: ['JS', 'Webpack'],
     live: 'https://mike2611.github.io/leaderboard/',
@@ -57,8 +49,7 @@ const projects = {
   },
   user: {
     name: 'Users Register',
-    description: `This project is a table for users. 
-    Where users can be added, deleted, or modified.`,
+    description: 'This project is a table for users. Where users can be added, deleted, or modified.',
     image: 'images/projects/user.png',
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/users-register/',
@@ -66,8 +57,7 @@ const projects = {
   },
   books: {
     name: 'Awesome books',
-    description: `In this project, you can add and delete your favorite books,
-     these are persisted thanks to your local storage.`,
+    description: 'In this project, you can add and delete your favorite books, these are persisted thanks to your local storage.',
     image: 'images/projects/books.png',
     technologies: ['JS', 'Bootstrap'],
     live: 'https://mike2611.github.io/awesome-books/#',
@@ -75,7 +65,7 @@ const projects = {
   },
   todo: {
     name: 'ToDo-List',
-    description: 'This project is a ToDo-List where the user can add, delete and edit tasks, tasks can be marked as completed and all completed tasks can be deleted',
+    description: 'This project is a ToDo-List where the user can add, delete, edit, drag and drop tasks',
     image: 'images/projects/todo.png',
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/todo-list-mv/',
@@ -83,8 +73,7 @@ const projects = {
   },
   sketch: {
     name: 'Etch-a-Sketch',
-    description: `This project is something between a 
-    sketchpad and an Etch-A-Sketch.`,
+    description: 'This project is something between a sketchpad and an Etch-A-Sketch.',
     image: 'images/projects/etch.png',
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/etch-a-sketch/',
@@ -92,8 +81,7 @@ const projects = {
   },
   rps: {
     name: 'Rock Paper Scissors',
-    description: `In this project, you play against the computer a simple 
-    game of rock, paper, scissors first to five wins!`,
+    description: 'In this project, you play against the computer a simple game of rock, paper, scissors first to five wins!',
     image: 'images/projects/rps.png',
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/rock-paper-scissor/',
@@ -101,8 +89,7 @@ const projects = {
   },
   cars: {
     name: 'Car Catalog',
-    description: `This project is a catalog for cars. Where cars can be added,
-     deleted, or get their registration changed.`,
+    description: 'This project is a catalog for cars. Where cars can be added, deleted, or get their registration changed.',
     image: 'images/projects/cars.png',
     technologies: ['HTML', 'CSS', 'TS'],
     live: 'https://mike2611.github.io/mi-catalogo/',
@@ -118,7 +105,7 @@ const firstCard = document.querySelector('#first-card');
 firstCard.firstElementChild.src = projects.albumist.image;
 const firstCardChilds = firstCard.childNodes;
 firstCardChilds[3].firstElementChild.innerText = projects.albumist.name;
-firstCardChilds[3].querySelector('#info-card').innerText = 'Take a look at this web app it has great design and UX, the objective of the app is retrieving the albums where a top song from spotify is in.';
+firstCardChilds[3].querySelector('#info-card').innerText = 'The objective of the app is retrieving the albums where a top song from spotify is in.';
 const firstCardTechnologies = firstCardChilds[3].querySelector('#languages-first');
 (projects.albumist.technologies).forEach((tech) => {
   const technology = document.createElement('li');
@@ -180,8 +167,6 @@ function getModal(id) {
     technologies.appendChild(technology);
   });
   modalChilds[5].firstElementChild.firstElementChild.src = projects[arrayProjects[id]].image;
-  const modalDescription = modalChilds[5].querySelector('#description-modal');
-  modalDescription.innerText = projects[arrayProjects[id]].description;
   const liveBtn = modalChilds[5].querySelector('#live-btn');
   liveBtn.addEventListener('click', () => {
     window.location.href = projects[arrayProjects[id]].live;
