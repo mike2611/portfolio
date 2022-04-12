@@ -99,13 +99,13 @@ const projects = {
     link: 'https://github.com/mike2611/rock-paper-scissor/blob/main/README.md',
   },
   cars: {
-    name: 'Car Catalog',
-    description: 'This project is a catalog for cars. Where cars can be added, deleted, or get their registration changed.',
-    image: 'images/projects/cars.png',
+    name: 'Calisthenics Expo',
+    description: 'This project is a page for a no existing calisthenics expo. The design authorship is from Cindy Shin.',
+    image: 'images/projects/calisthenics.png',
     image_mobile: 'images/projects/mobile.png',
-    technologies: ['HTML', 'CSS', 'TS'],
-    live: 'https://mike2611.github.io/mi-catalogo/',
-    link: 'https://github.com/mike2611/mi-catalogo',
+    technologies: ['HTML', 'CSS', 'JS'],
+    live: 'https://mike2611.github.io/calisthenics-guide/',
+    link: 'https://github.com/mike2611/calisthenics-guide',
   },
 };
 
