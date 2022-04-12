@@ -513,6 +513,8 @@ a {
 #modal-bottom img {
   width: 80%;
   max-width: 400px;
+  border-radius: 20px;
+  border: #172b4d;
 }
 
 #modal-bottom p {
@@ -528,7 +530,7 @@ a {
   height: 45px;
   width: 134px;
   color: white;
-  margin: 0 5px 0 5px;
+  margin: 30px 5px 0 5px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 15px;
@@ -752,8 +754,8 @@ footer {
     width: 18rem;
   }
 
-  #principal-header > #header-name,
-  #principal-header > #items-container {
+  #principal-header>#header-name,
+  #principal-header>#items-container {
     animation-duration: 3s;
     animation-name: slidein;
   }
@@ -890,11 +892,11 @@ footer {
     transition: background 1s ease-in-out;
   }
 
-  .work-card:hover > .card-container > .used-languages {
+  .work-card:hover>.card-container>.used-languages {
     display: none;
   }
 
-  .work-card:hover > .see-btn {
+  .work-card:hover>.see-btn {
     display: flex;
     margin-top: 26px;
   }
