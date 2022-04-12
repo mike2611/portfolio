@@ -80,6 +80,15 @@ const projects = {
     live: 'https://mike2611.github.io/todo-list-mv/',
     link: 'https://github.com/mike2611/todo-list-mv',
   },
+  calisthenics: {
+    name: 'Calisthenics Expo',
+    description: 'This project is a page for a no existing calisthenics expo. The design authorship is from Cindy Shin.',
+    image: 'images/projects/calisthenics.png',
+    image_mobile: 'images/projects/mobile.png',
+    technologies: ['HTML', 'CSS', 'JS'],
+    live: 'https://mike2611.github.io/calisthenics-guide/',
+    link: 'https://github.com/mike2611/calisthenics-guide',
+  },
   sketch: {
     name: 'Etch-a-Sketch',
     description: 'This project is something between a sketchpad and an Etch-A-Sketch.',
@@ -97,15 +106,6 @@ const projects = {
     technologies: ['HTML', 'CSS', 'JS'],
     live: 'https://mike2611.github.io/rock-paper-scissor/',
     link: 'https://github.com/mike2611/rock-paper-scissor/blob/main/README.md',
-  },
-  cars: {
-    name: 'Calisthenics Expo',
-    description: 'This project is a page for a no existing calisthenics expo. The design authorship is from Cindy Shin.',
-    image: 'images/projects/calisthenics.png',
-    image_mobile: 'images/projects/mobile.png',
-    technologies: ['HTML', 'CSS', 'JS'],
-    live: 'https://mike2611.github.io/calisthenics-guide/',
-    link: 'https://github.com/mike2611/calisthenics-guide',
   },
 };
 
